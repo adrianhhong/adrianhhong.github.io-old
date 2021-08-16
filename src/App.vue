@@ -11,10 +11,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--primary-color);
 }
 
 body {
-  background: #8ca7ae;
+  background: var(--secondary-color);
 }
 </style>

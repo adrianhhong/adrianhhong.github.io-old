@@ -1,0 +1,16 @@
+:root {
+  font-size: 6.25%;
+
+  --primary-color: #8ca7ae;
+  /* --secondary-color: #2c3e50; */
+  --secondary-color: #191a1a;
+  --tertiary-color: #827a73;
+  --about-color: #aeae8c;
+  --work-color: #ae8c8c;
+  --projects-color: #8cae8d;
+  --contact-color: #8f8cae;
+}
+
+body {
+  font-size: 16rem;
+}
