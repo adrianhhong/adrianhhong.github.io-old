@@ -36,86 +36,116 @@
       </a>
     </header>
 
-    <section>
-      <h1 class="description">
-        Software Developer based in Melbourne, Australia
-      </h1>
-    </section>
+    <div style="margin-top: 900rem"></div>
 
     <section class="bookmarks">
-      <h2 class="bookmarks__about">about</h2>
-      <h2 class="bookmarks__work">work</h2>
-      <h2 class="bookmarks__projects">projects</h2>
-      <h2 class="bookmarks__contact">contact</h2>
+      <h2 class="text--color-about">about</h2>
+      <h2 class="text--color-work">work</h2>
+      <h2 class="text--color-projects">projects</h2>
+      <h2 class="text--color-contact">contact</h2>
     </section>
 
     <section class="container">
-      <h2 class="subheading">about</h2>
+      <h2 class="subheading text--color-about">about</h2>
       <p>
-        Hi, I'm Adrian Hong, a software developer based in Melbourne, Australia.
-        I enjoy front-end development, but do dabble in the back-end side of
-        things too. Technologies I have worked with include JavaScript,
-        TypeScript, HTML, CSS, Vue.js, Node.js, Express.js, NoSQL.
+        Heyo! I'm Adrian Hong, a software engineer based in Melbourne,
+        Australia. I currently work in Telstra, but am constantly on the look
+        out to further my skillset. Through my various experiences I have a had
+        the opportunity to curate memorable products that are not only
+        functional, but maintainable. Technologies I have worked with include
+        JavaScript ES6, TypeScript, HTML5, CSS, Vue.js, Node.js, Express.js,
+        Git, NoSQL.
       </p>
     </section>
 
-    <section class="container">
-      <h2 class="subheading">work</h2>
-      <h3>Education</h3>
-      <ul>
-        <li>
-          <h4>Monash University</h4>
-          <p>
-            Bachelor of Commerce and Bachelor of Engineering (Honours) –
-            Electrical and Computer Systems Engineering / Accounting
-          </p>
-          <h5>Mar 2014 – Jul 2019</h5>
-        </li>
-      </ul>
+    <section class="container work">
+      <h2 class="subheading text--color-work">work</h2>
       <h3>Experience</h3>
-      <ul>
-        <li>
+      <div class="work__item">
+        <div class="work__title">
           <h4>Telstra</h4>
-          <p>Software Engineer – Network as a Service</p>
-          <h5>Jan 2020 – Present</h5>
-        </li>
-        <li>
+          <h5>2020 – Present</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Software Engineer</h4>
+          <p>
+            Working in the NaaS+ (Network as a Service) team, I work on building
+            the internal API Gateway for Telstra's networks. I also develop the
+            front-end admin and self-service portal to manage the NaaS+
+            platform.
+          </p>
+        </div>
+      </div>
+      <div class="work__item">
+        <div class="work__title">
           <h4>Woodside Petroleum</h4>
+          <h5>2018 – 2019</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Intern – Instrument Controls Engineer</h4>
           <p>
-            Internship – Instrument Controls Engineering (Power Generation &
-            Utilities)
+            Working in the Power Generation & Utilities team, I implemented
+            software upgrades on the safety instrumented system for the Karratha
+            Gas Plant in W.A.
           </p>
-          <h5>Nov 2018 – Feb 2019</h5>
-        </li>
-        <li>
+        </div>
+      </div>
+      <div class="work__item">
+        <div class="work__title">
           <h4>Deloitte</h4>
-          <p>Internship – Internal Strategic Capabilities (Data)</p>
-          <h5>Jun 2018 – Jul 2018</h5>
-        </li>
-        <li>
-          <h4>Telstra</h4>
-          <p>Internship – Wireless Radio Design (Networks)</p>
-          <h5>Nov 2017 – May 2018</h5>
-        </li>
-      </ul>
-    </section>
-
-    <section class="container">
-      <h2 class="subheading">projects</h2>
-      <ul>
-        <li>
-          <h4>Crab & Coconuts</h4>
+          <h5>2018 – 2018</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Intern – Data Engineer</h4>
           <p>
-            An online adaption of the bluffing based board game originally
-            called Skull & Roses, but redesigned because crabs are cool.
+            I created a logistic regression model in Python that predicts the
+            likelihood of a business opportunity being attained by Deloitte.
+            Overall accuracy of 79% (an improvement of 14% from user
+            predictions).
           </p>
-          <h5>Vue.js, Typescript, Socket.IO</h5>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div class="work__item">
+        <div class="work__title">
+          <h4>Telstra</h4>
+          <h5>2017 – 2018</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Intern – Network Engineer</h4>
+          <p>
+            I formulated detailed design packages and produced power audit
+            appraisals for governement base station battery power upgrades.
+          </p>
+        </div>
+      </div>
+      <h3>Education</h3>
+      <div class="work__item">
+        <div class="work__title">
+          <h4>Monash University</h4>
+          <h5>2014 – 2019</h5>
+        </div>
+        <div class="work__detail">
+          <h4>BCom & BEng (Honours)</h4>
+          <p>Electrical & Computer Systems Engineering / Accounting</p>
+        </div>
+      </div>
     </section>
 
     <section class="container">
-      <h2 class="subheading">connect</h2>
+      <h2 class="subheading text--color-projects">projects</h2>
+
+      <li>
+        <h4>Crab & Coconuts</h4>
+        <p>
+          An online adaption of the bluffing based board game originally called
+          Skull & Roses, but redesigned because crabs are cool.
+        </p>
+        <h5>Vue.js, Typescript, Socket.IO</h5>
+      </li>
+    </section>
+
+    <section class="container">
+      <h2 class="subheading text--color-connect">connect</h2>
       <p>Give us a buzz yea?</p>
     </section>
   </div>
@@ -144,9 +174,9 @@ export default {
         document.getElementById("header__name").style.marginTop = "5rem";
         document.getElementById("header__name").style.letterSpacing = "6rem";
       } else {
-        document.getElementById("header__name").style.fontSize = "180rem";
+        document.getElementById("header__name").style.fontSize = "9.5vw";
         document.getElementById("header__name").style.marginTop = "205rem";
-        document.getElementById("header__name").style.letterSpacing = "40rem";
+        document.getElementById("header__name").style.letterSpacing = "1vw";
       }
     },
   },
@@ -193,15 +223,10 @@ export default {
 
 .header__name {
   transition: 1.5s;
-  font-size: 180rem;
-  letter-spacing: 40rem;
+  font-size: 9.5vw;
+  letter-spacing: 1vw;
   margin-top: 205rem;
   margin-bottom: 0rem;
-}
-
-.description {
-  font-size: 50rem;
-  margin: 360rem 0;
 }
 
 a {
@@ -214,26 +239,26 @@ a:hover {
 }
 
 .bookmarks {
-  width: 1400rem;
+  width: 90vw;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
-  font-size: 40rem;
+  font-size: 1.5vw;
 }
 
-.bookmarks__about {
+.text--color-about {
   color: var(--about-color);
 }
 
-.bookmarks__work {
+.text--color-work {
   color: var(--work-color);
 }
 
-.bookmarks__projects {
+.text--color-projects {
   color: var(--projects-color);
 }
 
-.bookmarks__contact {
+.text--color-contact {
   color: var(--contact-color);
 }
 
@@ -251,7 +276,7 @@ section {
 }
 
 p {
-  font-size: 30rem;
+  font-size: 33rem;
 }
 
 h3 {
@@ -266,12 +291,50 @@ h5 {
   font-size: 20rem;
 }
 
-@media (max-width: 1000px) {
+.work h3 {
+  text-align: start;
+}
+
+.work h4 {
+  font-size: 25rem;
+  margin: 0;
+}
+
+.work h5 {
+  margin: auto;
+  font-size: 21rem;
+}
+
+.work p {
+  font-size: 18rem;
+  text-align: start;
+  margin: auto;
+}
+
+.work__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30rem;
+}
+
+.work__title {
+  width: 300rem;
+  text-align: start;
+}
+
+.work__detail {
+  margin-left: 100rem;
+  width: 600rem;
+  text-align: start;
+}
+
+@media (max-width: 1200px) {
   p {
     font-size: 20rem;
   }
-  body {
-    background-color: red;
+
+  .bookmarks {
+    font-size: 20rem;
   }
 }
 </style>
