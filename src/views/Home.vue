@@ -48,13 +48,13 @@
     <section class="container">
       <h2 class="subheading text--color-about">about</h2>
       <p>
-        Heyo! I'm Adrian Hong, a software engineer based in Melbourne,
-        Australia. I currently work in Telstra, but am constantly on the look
-        out to further my skillset. Through my various experiences I have a had
-        the opportunity to curate memorable products that are not only
-        functional, but maintainable. Technologies I have worked with include
-        JavaScript ES6, TypeScript, HTML5, CSS, Vue.js, Node.js, Express.js,
-        Git, NoSQL.
+        delivery ahhhhhh moments since the 90s Heyo! I'm Adrian Hong, a software
+        engineer based in Melbourne, Australia. I am currently working at
+        Telstra, and constantly on the look out to further my skillset. Through
+        my various experiences I have had the opportunity to curate memorable
+        products that are not only functional, but maintainable. Technologies I
+        have worked with include JavaScript ES6, TypeScript, HTML5, CSS, Vue.js,
+        Node.js, Express.js, Git, NoSQL.
       </p>
     </section>
 
@@ -62,6 +62,13 @@
       <h2 class="subheading text--color-work">work</h2>
       <h3>Experience</h3>
       <div class="work__item">
+        <img
+          class="work__logo"
+          src="@/assets/telstra.svg"
+          alt="Telstra"
+          height="100"
+          width="100"
+        />
         <div class="work__title">
           <h4>Telstra</h4>
           <h5>2020 – Present</h5>
@@ -70,13 +77,20 @@
           <h4>Software Engineer</h4>
           <p>
             Working in the NaaS+ (Network as a Service) team, I work on building
-            the internal API Gateway for Telstra's networks. I also develop the
+            the back-end API Gateway for Telstra's networks. I also develop the
             front-end admin and self-service portal to manage the NaaS+
             platform.
           </p>
         </div>
       </div>
       <div class="work__item">
+        <img
+          class="work__logo"
+          src="@/assets/woodside.svg"
+          alt="Woodside"
+          height="100"
+          width="100"
+        />
         <div class="work__title">
           <h4>Woodside Petroleum</h4>
           <h5>2018 – 2019</h5>
@@ -91,6 +105,13 @@
         </div>
       </div>
       <div class="work__item">
+        <img
+          class="work__logo"
+          src="@/assets/deloitte.svg"
+          alt="Deloitte"
+          height="100"
+          width="100"
+        />
         <div class="work__title">
           <h4>Deloitte</h4>
           <h5>2018 – 2018</h5>
@@ -106,6 +127,13 @@
         </div>
       </div>
       <div class="work__item">
+        <img
+          class="work__logo"
+          src="@/assets/telstra.svg"
+          alt="Telstra"
+          height="100"
+          width="100"
+        />
         <div class="work__title">
           <h4>Telstra</h4>
           <h5>2017 – 2018</h5>
@@ -120,6 +148,13 @@
       </div>
       <h3>Education</h3>
       <div class="work__item">
+        <img
+          class="work__logo"
+          src="@/assets/monash.svg"
+          alt="Monash"
+          height="100"
+          width="100"
+        />
         <div class="work__title">
           <h4>Monash University</h4>
           <h5>2014 – 2019</h5>
@@ -140,7 +175,7 @@
           An online adaption of the bluffing based board game originally called
           Skull & Roses, but redesigned because crabs are cool.
         </p>
-        <h5>Vue.js, Typescript, Socket.IO</h5>
+        <h5>Vue.js, Typescript, Node.js, Express.js Socket.IO</h5>
       </li>
     </section>
 
@@ -315,6 +350,10 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin: 30rem;
+}
+
+.work__logo {
+  width: 100rem;
 }
 
 .work__title {
