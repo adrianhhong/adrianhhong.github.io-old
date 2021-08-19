@@ -11,9 +11,7 @@
       </section> -->
 
       <div class="header__scroll">
-        <i>
-          <span class="mdi mdi-chevron-double-down"></span>
-        </i>
+        <span class="mdi mdi-chevron-double-down"></span>
       </div>
 
       <div class="header__description">
@@ -24,27 +22,62 @@
     <section class="container">
       <h2 class="subheading text--color-about">about</h2>
       <p>
-        Heyo! I'm Adrian Hong, a software engineer based in Melbourne,
-        Australia. I enjoy curating memorable products that are not only
-        functional, but maintainable. I currently work at Telstra building the
-        back-end API Gateway for Telstra's networks. I also develop the
-        front-end admin and self-service portal to manage the platform.
-        Technologies I have worked with include JavaScript ES6, TypeScript,
-        HTML5, CSS, Vue.js, Node.js, Express.js, Git, NoSQL.
+        Heyo! I'm Adrian Hong a software engineer based in Melbourne, Australia.
+        I enjoy curating memorable products that are not only functional, but
+        maintainable. I currently work at Telstra doing full-stack on the
+        internal API Gateway for Telstra's networks.
+        <br />
+        <br />
+        Technologies I have worked with:
       </p>
+
+      <h4 style="font-size: 30rem">
+        <ul>
+          <li>
+            <span class="mdi mdi-language-javascript"></span>
+            JavaScript
+          </li>
+          <li>
+            <span class="mdi mdi-language-typescript"></span>
+            TypeScript
+          </li>
+          <li>
+            <span class="mdi mdi-vuejs"></span>
+            Vue.js
+          </li>
+          <li>
+            <span class="mdi mdi-language-html5"></span>
+            HTML5
+          </li>
+          <li>
+            <span class="mdi mdi-nodejs"></span>
+            Node.js
+          </li>
+          <li>
+            <img src="@/assets/expressjs.svg" alt="ExpressJS" />
+            Express.js
+          </li>
+          <li>
+            <span class="mdi mdi-language-css3"></span>
+            CSS
+          </li>
+          <li>
+            <img src="@/assets/mongodb.svg" alt="MongoDB" />
+            MongoDB
+          </li>
+          <li>
+            <span class="mdi mdi-git"></span>
+            Git
+          </li>
+        </ul>
+      </h4>
     </section>
 
     <section class="container work">
-      <h2 class="subheading text--color-work">experiences</h2>
-      <h3>Work</h3>
+      <h2 class="subheading text--color-work">experience</h2>
+      <h3 class="work__subtitle">work</h3>
+      <hr />
       <div class="work__item">
-        <img
-          class="work__logo"
-          src="@/assets/telstra.svg"
-          alt="Telstra"
-          height="100"
-          width="100"
-        />
         <div class="work__title">
           <h4>Telstra</h4>
           <h5>2020 – Present</h5>
@@ -53,70 +86,46 @@
           <h4>Software Engineer</h4>
         </div>
       </div>
+      <hr />
       <div class="work__item">
-        <img
-          class="work__logo"
-          src="@/assets/woodside.svg"
-          alt="Woodside"
-          height="100"
-          width="100"
-        />
         <div class="work__title">
           <h4>Woodside Petroleum</h4>
           <h5>2018 – 2019</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern – Instrument Controls Engineer</h4>
+          <h4>Intern • Instrument Controls Engineer</h4>
         </div>
       </div>
+      <hr />
       <div class="work__item">
-        <img
-          class="work__logo"
-          src="@/assets/deloitte.svg"
-          alt="Deloitte"
-          height="100"
-          width="100"
-        />
         <div class="work__title">
           <h4>Deloitte</h4>
           <h5>2018 – 2018</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern – Data Engineer</h4>
+          <h4>Intern • Data Engineer</h4>
         </div>
       </div>
+      <hr />
       <div class="work__item">
-        <img
-          class="work__logo"
-          src="@/assets/telstra.svg"
-          alt="Telstra"
-          height="100"
-          width="100"
-        />
         <div class="work__title">
           <h4>Telstra</h4>
           <h5>2017 – 2018</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern – Network Engineer</h4>
+          <h4>Intern • Network Engineer</h4>
         </div>
       </div>
-      <h3>Education</h3>
+      <h3 class="work__subtitle">education</h3>
+      <hr />
       <div class="work__item">
-        <img
-          class="work__logo"
-          src="@/assets/monash.svg"
-          alt="Monash"
-          height="100"
-          width="100"
-        />
         <div class="work__title">
           <h4>Monash University</h4>
           <h5>2014 – 2019</h5>
         </div>
         <div class="work__detail">
-          <h4>BCom & BEng (Honours)</h4>
-          <p>Electrical & Computer Systems Engineering / Accounting</p>
+          <h4>BEngineering & BCommerce (Honours)</h4>
+          <p>Electrical & Computer Systems Engineering • Accounting</p>
         </div>
       </div>
     </section>
@@ -124,14 +133,12 @@
     <section class="container">
       <h2 class="subheading text--color-projects">projects</h2>
 
-      <li>
-        <h4>Crab & Coconuts</h4>
-        <p>
-          An online adaption of the bluffing based board game originally called
-          Skull & Roses, but redesigned because crabs are cool.
-        </p>
-        <h5>Vue.js, Typescript, Node.js, Express.js Socket.IO</h5>
-      </li>
+      <h4>Crab & Coconuts</h4>
+      <p>
+        An online adaption of the bluffing based board game originally called
+        Skull & Roses, but redesigned because crabs are cool.
+      </p>
+      <h5>Vue.js, Typescript, Node.js, Express.js, Socket.IO, HTML, Vuetify</h5>
     </section>
 
     <section class="container">
@@ -141,7 +148,6 @@
         href="mailto: adrianhhong@gmail.com"
         target="_blank"
         rel="noreferrer noopener"
-        class="header__icon--mail"
       >
         <span class="mdi mdi-email"></span>
       </a>
@@ -149,7 +155,6 @@
         href="https://www.linkedin.com/in/adrianhhong/"
         target="_blank"
         rel="noreferrer noopener"
-        class="header__icon--linkedin"
       >
         <span class="mdi mdi-linkedin"></span>
       </a>
@@ -157,7 +162,6 @@
         href="https://github.com/adrianhhong"
         target="_blank"
         rel="noreferrer noopener"
-        class="header__icon--github"
       >
         <span class="mdi mdi-github"></span>
       </a>
@@ -172,6 +176,17 @@ export default {
 </script>
 
 <style scoped>
+ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+li {
+  height: 60rem;
+  line-height: 200%;
+}
+
 .mdi {
   font-size: 48rem;
 }
@@ -213,21 +228,6 @@ export default {
   position: absolute;
   top: 30rem;
   right: 30rem;
-}
-
-.header__icon--mail {
-  right: 144rem;
-  top: 0;
-}
-
-.header__icon--linkedin {
-  right: 84rem;
-  top: 0;
-}
-
-.header__icon--github {
-  right: 24rem;
-  top: 0;
 }
 
 a {
@@ -272,6 +272,14 @@ p {
   font-size: 33rem;
 }
 
+h1 {
+  font-size: 40rem;
+}
+
+h2 {
+  font-size: 38rem;
+}
+
 h3 {
   font-size: 35rem;
 }
@@ -304,6 +312,10 @@ h5 {
   margin: auto;
 }
 
+.work__subtitle {
+  margin-top: 64rem;
+}
+
 .work__item {
   display: flex;
   justify-content: space-between;
@@ -327,7 +339,7 @@ h5 {
   text-align: start;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   p {
     font-size: 20rem;
   }
