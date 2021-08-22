@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
 #app {
   font-family: "Gowun Batang", serif;
   -webkit-font-smoothing: antialiased;

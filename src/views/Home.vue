@@ -4,10 +4,8 @@
       <h1 class="header__name">Adrian Hong</h1>
       <h2 class="header__subtitle">Software Developer</h2>
       <div class="header__scroll">
-        <h3>Find out more :)</h3>
         <span class="mdi mdi-chevron-double-down"></span>
       </div>
-
       <div class="header__description">
         <h3>Melbourne, Australia <br />2021</h3>
         <a
@@ -32,15 +30,22 @@
           <span class="mdi mdi-github"></span>
         </a>
       </div>
+      <div class="b-colors header__color">
+        <div class="b-colors__color--1"></div>
+        <div class="b-colors__color--2"></div>
+        <div class="b-colors__color--3"></div>
+        <div class="b-colors__color--4"></div>
+      </div>
     </header>
 
     <section class="container">
       <h2 class="subheading text--color-about">about</h2>
       <p>
-        Heyo! I'm Adrian Hong a software developer based in Melbourne,
-        Australia. I enjoy curating memorable products that are not only
-        functional, but maintainable. I currently work at Telstra doing
-        full-stack on the internal API Gateway for Telstra's networks.
+        Heyo! I'm <b>Adrian Hong</b> a software developer based in
+        <b>Melbourne, Australia</b>. I enjoy curating memorable products that
+        are not only functional, but maintainable. I currently work at
+        <b>Telstra</b>
+        doing full-stack on the internal API Gateway for Telstra's networks.
         <br />
         <br />
         Technologies I have worked with:
@@ -237,6 +242,79 @@ export default {
 </script>
 
 <style scoped>
+.b-colors {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.b-colors__color--1,
+.b-colors__color--2,
+.b-colors__color--3,
+.b-colors__color--4 {
+  display: inline-block;
+  width: 100rem;
+  height: 100rem;
+  margin: 0 30rem;
+  border-radius: 50%;
+  -webkit-animation-name: color;
+  animation-name: color;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-timing-function: cubic-bezier(0.35, 0, 0.15, 1);
+  animation-timing-function: cubic-bezier(0.35, 0, 0.15, 1);
+}
+
+.b-colors__color--1 {
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  background-color: var(--accent1-color);
+}
+
+.b-colors__color--2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  background-color: var(--accent2-color);
+}
+
+.b-colors__color--3 {
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+  background-color: var(--accent3-color);
+}
+
+.b-colors__color--4 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  background-color: var(--accent4-color);
+}
+
+@keyframes color {
+  0% {
+    -webkit-transform: rotateY(0) scale(1);
+    transform: rotateY(0) scale(1);
+  }
+  60% {
+    -webkit-transform: rotateY(0) scale(1);
+    transform: rotateY(0) scale(1);
+  }
+  70% {
+    -webkit-transform: rotateY(0) scale(0.9);
+    transform: rotateY(0) scale(0.9);
+  }
+  75% {
+    -webkit-transform: rotateY(0) scale(1.2);
+    transform: rotateY(0) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotateY(0) scale(1);
+    transform: rotateY(0) scale(1);
+  }
+}
+
 .project {
   justify-content: center;
   border-radius: 16rem;
@@ -279,6 +357,12 @@ li {
   width: calc(100vw - (100vw - 100%));
   background: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.header__color {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
 }
 
 .header__name {
