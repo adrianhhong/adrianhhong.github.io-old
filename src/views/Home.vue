@@ -2,30 +2,45 @@
   <div>
     <header class="header">
       <h1 class="header__name">Adrian Hong</h1>
-
-      <!-- <section class="bookmarks">
-        <h2 class="text--color-about">about</h2>
-        <h2 class="text--color-work">work</h2>
-        <h2 class="text--color-projects">projects</h2>
-        <h2 class="text--color-contact">contact</h2>
-      </section> -->
-
+      <h2 class="header__subtitle">Software Developer</h2>
       <div class="header__scroll">
+        <h3>Find out more :)</h3>
         <span class="mdi mdi-chevron-double-down"></span>
       </div>
 
       <div class="header__description">
-        <h3>Software Engineer <br />Melbourne, Australia <br />2021</h3>
+        <h3>Melbourne, Australia <br />2021</h3>
+        <a
+          href="mailto: adrianhhong@gmail.com"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-email"></span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/adrianhhong/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-linkedin"></span>
+        </a>
+        <a
+          href="https://github.com/adrianhhong"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-github"></span>
+        </a>
       </div>
     </header>
 
     <section class="container">
       <h2 class="subheading text--color-about">about</h2>
       <p>
-        Heyo! I'm Adrian Hong a software engineer based in Melbourne, Australia.
-        I enjoy curating memorable products that are not only functional, but
-        maintainable. I currently work at Telstra doing full-stack on the
-        internal API Gateway for Telstra's networks.
+        Heyo! I'm Adrian Hong a software developer based in Melbourne,
+        Australia. I enjoy curating memorable products that are not only
+        functional, but maintainable. I currently work at Telstra doing
+        full-stack on the internal API Gateway for Telstra's networks.
         <br />
         <br />
         Technologies I have worked with:
@@ -132,13 +147,56 @@
 
     <section class="container">
       <h2 class="subheading text--color-projects">projects</h2>
-
-      <h4>Crab & Coconuts</h4>
-      <p>
-        An online adaption of the bluffing based board game originally called
-        Skull & Roses, but redesigned because crabs are cool.
-      </p>
-      <h5>Vue.js, Typescript, Node.js, Express.js, Socket.IO, HTML, Vuetify</h5>
+      <div class="project">
+        <h3>Crab & Coconuts</h3>
+        <div class="chip"><div class="chip__label">Vue.js</div></div>
+        <div class="chip"><div class="chip__label">Socket.IO</div></div>
+        <div class="chip"><div class="chip__label">Typescript</div></div>
+        <div class="chip"><div class="chip__label">Node.js</div></div>
+        <div class="chip"><div class="chip__label">Express.js</div></div>
+        <h4>
+          An online adaption of the bluffing based board game called Skull &
+          Roses, but redesigned because crabs are cool.
+        </h4>
+        <a
+          href="http://crabandcoconuts.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-web"></span>
+        </a>
+        <a
+          href="https://github.com/adrianhhong/crabandcoconuts"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-github"></span>
+        </a>
+        <h5>See More →</h5>
+      </div>
+      <div class="project">
+        <h3>Just One</h3>
+        <div class="chip"><div class="chip__label">Javascript</div></div>
+        <div class="chip"><div class="chip__label">Socket.IO</div></div>
+        <div class="chip"><div class="chip__label">HTML</div></div>
+        <div class="chip"><div class="chip__label">CSS</div></div>
+        <h4>Online implementation of the Just One Board Game.</h4>
+        <a
+          href="http://crabandcoconuts.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-web"></span>
+        </a>
+        <a
+          href="https://github.com/adrianhhong/crabandcoconuts"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <span class="mdi mdi-github"></span>
+        </a>
+        <h5>See More →</h5>
+      </div>
     </section>
 
     <section class="container">
@@ -165,6 +223,9 @@
       >
         <span class="mdi mdi-github"></span>
       </a>
+      <h5 style="text-align: end; margin-top: 80px">
+        This website was made by Adrian Hong using Vue.js :)
+      </h5>
     </section>
   </div>
 </template>
@@ -176,6 +237,28 @@ export default {
 </script>
 
 <style scoped>
+.project {
+  justify-content: center;
+  border-radius: 16rem;
+  border: solid 1em var(--primary-color);
+  padding: 30rem;
+  margin: 36rem 0;
+}
+
+.chip {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 9999px;
+  border: solid 1em var(--primary-color);
+  padding: 3rem 16rem;
+  margin: 0 16rem 16rem 0;
+}
+
+.chip__label {
+  font-size: 16rem;
+}
+
 ul {
   columns: 3;
   -webkit-columns: 3;
@@ -200,9 +283,17 @@ li {
 
 .header__name {
   font-size: 60rem;
-  letter-spacing: 1vw;
+  letter-spacing: 15rem;
   position: absolute;
   top: 60rem;
+  left: 60rem;
+}
+
+.header__subtitle {
+  font-size: 40rem;
+  letter-spacing: 8rem;
+  position: absolute;
+  top: 190rem;
   left: 60rem;
 }
 
@@ -240,19 +331,19 @@ a:hover {
 }
 
 .text--color-about {
-  color: var(--about-color);
+  color: var(--accent1-color);
 }
 
 .text--color-work {
-  color: var(--work-color);
+  color: var(--accent2-color);
 }
 
 .text--color-projects {
-  color: var(--projects-color);
+  color: var(--accent3-color);
 }
 
 .text--color-contact {
-  color: var(--contact-color);
+  color: var(--accent4-color);
 }
 
 section {
@@ -297,13 +388,11 @@ h5 {
 }
 
 .work h4 {
-  font-size: 25rem;
   margin: 0;
 }
 
 .work h5 {
   margin: auto;
-  font-size: 21rem;
 }
 
 .work p {
@@ -320,12 +409,6 @@ h5 {
   display: flex;
   justify-content: space-between;
   margin: 30rem;
-}
-
-.work__logo {
-  min-width: 70rem;
-  min-height: 70rem;
-  margin-right: 20rem;
 }
 
 .work__title {
