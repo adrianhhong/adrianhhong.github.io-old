@@ -1,6 +1,16 @@
 <template>
   <div>
     <header class="header">
+      <div class="header__color">
+        <div>
+          <div class="header__color--1"></div>
+          <div class="header__color--2"></div>
+        </div>
+        <div>
+          <div class="header__color--3"></div>
+          <div class="header__color--4"></div>
+        </div>
+      </div>
       <h1 class="header__name">Adrian Hong</h1>
       <h2 class="header__subtitle">Software Developer</h2>
       <div class="header__scroll">
@@ -29,12 +39,6 @@
         >
           <span class="mdi mdi-github"></span>
         </a>
-      </div>
-      <div class="b-colors header__color">
-        <div class="b-colors__color--1"></div>
-        <div class="b-colors__color--2"></div>
-        <div class="b-colors__color--3"></div>
-        <div class="b-colors__color--4"></div>
       </div>
     </header>
 
@@ -153,7 +157,9 @@
     <section class="container">
       <h2 class="subheading text--color-projects">projects</h2>
       <div class="project">
-        <h3>Crab & Coconuts</h3>
+        <h3>
+          <router-link to="crab">Crab & Coconuts</router-link>
+        </h3>
         <div class="chip"><div class="chip__label">Vue.js</div></div>
         <div class="chip"><div class="chip__label">Socket.IO</div></div>
         <div class="chip"><div class="chip__label">Typescript</div></div>
@@ -177,10 +183,14 @@
         >
           <span class="mdi mdi-github"></span>
         </a>
-        <h5>See More →</h5>
+        <h5>
+          <router-link to="crab"> See More → </router-link>
+        </h5>
       </div>
       <div class="project">
-        <h3>Just One</h3>
+        <h3>
+          <router-link to="just-one">Just One </router-link>
+        </h3>
         <div class="chip"><div class="chip__label">Javascript</div></div>
         <div class="chip"><div class="chip__label">Socket.IO</div></div>
         <div class="chip"><div class="chip__label">HTML</div></div>
@@ -200,7 +210,9 @@
         >
           <span class="mdi mdi-github"></span>
         </a>
-        <h5>See More →</h5>
+        <h5>
+          <router-link to="just-one"> See More → </router-link>
+        </h5>
       </div>
     </section>
 
@@ -228,10 +240,10 @@
       >
         <span class="mdi mdi-github"></span>
       </a>
-      <h5 style="text-align: end; margin-top: 80px">
-        This website was made by Adrian Hong using Vue.js :)
-      </h5>
     </section>
+    <small style="text-align: end; margin-top: 80px">
+      This website was made by Adrian Hong using Vue.js :)
+    </small>
   </div>
 </template>
 
@@ -242,24 +254,28 @@ export default {
 </script>
 
 <style scoped>
-.b-colors {
+.header__color {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   margin: 4rem auto;
 }
 
-.b-colors__color--1,
-.b-colors__color--2,
-.b-colors__color--3,
-.b-colors__color--4 {
+.header__color--1,
+.header__color--2,
+.header__color--3,
+.header__color--4 {
   display: inline-block;
-  width: 100rem;
-  height: 100rem;
-  margin: 0 30rem;
+  width: 10vw;
+  height: 10vw;
+  margin: 30rem 30rem;
   border-radius: 50%;
   -webkit-animation-name: color;
   animation-name: color;
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
@@ -268,27 +284,25 @@ export default {
   animation-timing-function: cubic-bezier(0.35, 0, 0.15, 1);
 }
 
-.b-colors__color--1 {
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
+.header__color--1 {
   background-color: var(--accent1-color);
 }
 
-.b-colors__color--2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
+.header__color--2 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
   background-color: var(--accent2-color);
 }
 
-.b-colors__color--3 {
-  -webkit-animation-delay: 0.45s;
-  animation-delay: 0.45s;
+.header__color--3 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   background-color: var(--accent3-color);
 }
 
-.b-colors__color--4 {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
+.header__color--4 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
   background-color: var(--accent4-color);
 }
 
@@ -357,12 +371,6 @@ li {
   width: calc(100vw - (100vw - 100%));
   background: var(--primary-color);
   color: var(--secondary-color);
-}
-
-.header__color {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
 }
 
 .header__name {
