@@ -157,6 +157,12 @@
     <section class="container">
       <h2 class="subheading text--color-projects">projects</h2>
       <div class="project">
+        <img
+          src="@/assets/crabandcoconuts.png"
+          alt="crab1"
+          width="700em"
+          style="margin: 20rem; float: right"
+        />
         <h3>
           <router-link to="crab">Crab & Coconuts</router-link>
         </h3>
@@ -183,9 +189,6 @@
         >
           <span class="mdi mdi-github"></span>
         </a>
-        <h5>
-          <router-link to="crab"> See More → </router-link>
-        </h5>
       </div>
       <div class="project">
         <h3>
@@ -195,24 +198,21 @@
         <div class="chip"><div class="chip__label">Socket.IO</div></div>
         <div class="chip"><div class="chip__label">HTML</div></div>
         <div class="chip"><div class="chip__label">CSS</div></div>
-        <h4>Online implementation of the Just One Board Game.</h4>
+        <h4>An online adaption of the board game Just One.</h4>
         <a
-          href="http://crabandcoconuts.herokuapp.com/"
+          href="https://justonegame.herokuapp.com/"
           target="_blank"
           rel="noreferrer noopener"
         >
           <span class="mdi mdi-web"></span>
         </a>
         <a
-          href="https://github.com/adrianhhong/crabandcoconuts"
+          href="https://github.com/adrianhhong/just-one"
           target="_blank"
           rel="noreferrer noopener"
         >
           <span class="mdi mdi-github"></span>
         </a>
-        <h5>
-          <router-link to="just-one"> See More → </router-link>
-        </h5>
       </div>
     </section>
 
@@ -342,13 +342,14 @@ export default {
   display: inline-flex;
   justify-content: center;
   border-radius: 9999px;
-  border: solid 1em var(--primary-color);
-  padding: 3rem 16rem;
+  border: solid 2em var(--primary-color);
+  padding: 7rem 20rem;
   margin: 0 16rem 16rem 0;
 }
 
 .chip__label {
-  font-size: 16rem;
+  font-size: 20rem;
+  font-weight: bold;
 }
 
 ul {
@@ -447,7 +448,7 @@ section {
 }
 
 .container {
-  width: min(90%, 1000rem);
+  width: min(90%, 1500rem);
   margin-inline: auto;
 }
 
