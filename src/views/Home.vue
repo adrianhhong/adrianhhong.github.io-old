@@ -11,13 +11,13 @@
           <div class="header__color--4"></div>
         </div>
       </div>
-      <h1 class="header__name">Adrian Hong</h1>
-      <h2 class="header__subtitle">Software Developer</h2>
+      <span class="header__name">Adrian Hong</span>
+      <span class="header__subtitle">Software Developer</span>
       <div class="header__scroll">
         <span class="mdi mdi-chevron-double-down"></span>
       </div>
       <div class="header__description">
-        <h3>Melbourne, Australia <br />2021</h3>
+        <span>Melbourne, Australia <br />2021<br /></span>
         <a
           href="mailto: adrianhhong@gmail.com"
           target="_blank"
@@ -43,7 +43,7 @@
     </header>
 
     <section class="container">
-      <h2 class="subheading text--color-about">about</h2>
+      <h2 class="text--color-about">about</h2>
       <p>
         Heyo! I'm <b>Adrian Hong</b> a software developer based in
         <b>Melbourne, Australia</b>. I enjoy curating memorable products that
@@ -55,7 +55,7 @@
         Technologies I have worked with:
       </p>
 
-      <h4 style="font-size: 30rem">
+      <h4>
         <ul>
           <li>
             <span class="mdi mdi-language-javascript"></span>
@@ -98,7 +98,7 @@
     </section>
 
     <section class="container work">
-      <h2 class="subheading text--color-work">experience</h2>
+      <h2 class="text--color-work">experience</h2>
       <h3 class="work__subtitle">work</h3>
       <hr />
       <div class="work__item">
@@ -155,7 +155,7 @@
     </section>
 
     <section class="container">
-      <h2 class="subheading text--color-projects">projects</h2>
+      <h2 class="text--color-projects">projects</h2>
       <div class="project">
         <img
           src="@/assets/crabandcoconuts.png"
@@ -217,7 +217,7 @@
     </section>
 
     <section class="container">
-      <h2 class="subheading text--color-contact">connect</h2>
+      <h2 class="text--color-contact">connect</h2>
       <p>Give me a buzz yea?</p>
       <a
         href="mailto: adrianhhong@gmail.com"
@@ -254,6 +254,26 @@ export default {
 </script>
 
 <style scoped>
+p {
+  font-size: 33rem;
+}
+
+h2 {
+  font-size: 50rem;
+}
+
+h3 {
+  font-size: 35rem;
+}
+
+h4 {
+  font-size: 25rem;
+}
+
+h5 {
+  font-size: 20rem;
+}
+
 .header__color {
   position: absolute;
   top: 50%;
@@ -274,8 +294,8 @@ export default {
   border-radius: 50%;
   -webkit-animation-name: color;
   animation-name: color;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-play-state: running;
@@ -295,14 +315,14 @@ export default {
 }
 
 .header__color--3 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
   background-color: var(--accent3-color);
 }
 
 .header__color--4 {
-  -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   background-color: var(--accent4-color);
 }
 
@@ -375,16 +395,17 @@ li {
 }
 
 .header__name {
-  font-size: 60rem;
-  letter-spacing: 15rem;
+  font-size: clamp(55rem, 5vw, 85rem);
+  font-weight: bold;
+  letter-spacing: 8rem;
   position: absolute;
   top: 60rem;
   left: 60rem;
 }
 
 .header__subtitle {
-  font-size: 40rem;
-  letter-spacing: 8rem;
+  font-size: clamp(25rem, 2vw, 85rem);
+  letter-spacing: 2rem;
   position: absolute;
   top: 190rem;
   left: 60rem;
@@ -397,21 +418,11 @@ li {
 }
 
 .header__description {
+  font-size: clamp(25rem, 2vw, 35rem);
   position: absolute;
   bottom: 60rem;
   right: 60rem;
   text-align: right;
-}
-
-.bookmarks {
-  width: 50vw;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  font-size: 1.5vw;
-  position: absolute;
-  top: 30rem;
-  right: 30rem;
 }
 
 a {
@@ -440,40 +451,12 @@ a:hover {
 }
 
 section {
-  padding: 80rem 0;
-}
-
-.subheading {
-  font-size: 50rem;
+  padding: 10rem 0;
 }
 
 .container {
   width: min(90%, 1500rem);
   margin-inline: auto;
-}
-
-p {
-  font-size: 33rem;
-}
-
-h1 {
-  font-size: 40rem;
-}
-
-h2 {
-  font-size: 38rem;
-}
-
-h3 {
-  font-size: 35rem;
-}
-
-h4 {
-  font-size: 25rem;
-}
-
-h5 {
-  font-size: 20rem;
 }
 
 .work h3 {
@@ -520,8 +503,25 @@ h5 {
     font-size: 20rem;
   }
 
-  .bookmarks {
+  h2 {
+    font-size: 40rem;
+  }
+
+  h3 {
+    font-size: 35rem;
+  }
+
+  h4 {
     font-size: 20rem;
+  }
+
+  h5 {
+    font-size: 15rem;
+  }
+
+  .chip__label {
+    font-size: 15rem;
+    font-weight: bold;
   }
 }
 </style>
