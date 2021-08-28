@@ -14,7 +14,7 @@
       <span class="header__name">Adrian Hong</span>
       <span class="header__subtitle">Software Developer</span>
       <div class="header__scroll">
-        <span class="mdi mdi-chevron-double-down"></span>
+        <span class="mdi mdi__contact mdi-chevron-double-down"></span>
       </div>
       <div class="header__description">
         <span>Melbourne, Australia <br />2021<br /></span>
@@ -23,21 +23,21 @@
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-email"></span>
+          <span class="mdi mdi__contact mdi-email"></span>
         </a>
         <a
           href="https://www.linkedin.com/in/adrianhhong/"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-linkedin"></span>
+          <span class="mdi mdi__contact mdi-linkedin"></span>
         </a>
         <a
           href="https://github.com/adrianhhong"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-github"></span>
+          <span class="mdi mdi__contact mdi-github"></span>
         </a>
       </div>
     </header>
@@ -58,23 +58,23 @@
       <h4>
         <ul>
           <li>
-            <span class="mdi mdi-language-javascript"></span>
+            <span class="mdi mdi__technologies mdi-language-javascript"></span>
             JavaScript
           </li>
           <li>
-            <span class="mdi mdi-language-typescript"></span>
+            <span class="mdi mdi__technologies mdi-language-typescript"></span>
             TypeScript
           </li>
           <li>
-            <span class="mdi mdi-vuejs"></span>
+            <span class="mdi mdi__technologies mdi-vuejs"></span>
             Vue.js
           </li>
           <li>
-            <span class="mdi mdi-language-html5"></span>
+            <span class="mdi mdi__technologies mdi-language-html5"></span>
             HTML5
           </li>
           <li>
-            <span class="mdi mdi-nodejs"></span>
+            <span class="mdi mdi__technologies mdi-nodejs"></span>
             Node.js
           </li>
           <li>
@@ -82,7 +82,7 @@
             Express.js
           </li>
           <li>
-            <span class="mdi mdi-language-css3"></span>
+            <span class="mdi mdi__technologies mdi-language-css3"></span>
             CSS
           </li>
           <li>
@@ -90,7 +90,7 @@
             MongoDB
           </li>
           <li>
-            <span class="mdi mdi-git"></span>
+            <span class="mdi mdi__technologies mdi-git"></span>
             Git
           </li>
         </ul>
@@ -160,7 +160,7 @@
         <img
           src="@/assets/crabandcoconuts.png"
           alt="crab1"
-          width="700em"
+          width="550em"
           style="margin: 20rem; float: right"
         />
         <h3>
@@ -224,21 +224,21 @@
         target="_blank"
         rel="noreferrer noopener"
       >
-        <span class="mdi mdi-email"></span>
+        <span class="mdi mdi__contact mdi-email"></span>
       </a>
       <a
         href="https://www.linkedin.com/in/adrianhhong/"
         target="_blank"
         rel="noreferrer noopener"
       >
-        <span class="mdi mdi-linkedin"></span>
+        <span class="mdi mdi__contact mdi-linkedin"></span>
       </a>
       <a
         href="https://github.com/adrianhhong"
         target="_blank"
         rel="noreferrer noopener"
       >
-        <span class="mdi mdi-github"></span>
+        <span class="mdi mdi__contact mdi-github"></span>
       </a>
     </section>
     <small style="text-align: end; margin-top: 80px">
@@ -373,6 +373,7 @@ h5 {
 }
 
 ul {
+  list-style-type: none;
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
@@ -383,8 +384,12 @@ li {
   line-height: 200%;
 }
 
-.mdi {
+.mdi__contact {
   font-size: 48rem;
+}
+
+.mdi__technologies {
+  font-size: 36rem;
 }
 
 .header {
@@ -522,6 +527,12 @@ section {
   .chip__label {
     font-size: 15rem;
     font-weight: bold;
+  }
+
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
 }
 </style>
