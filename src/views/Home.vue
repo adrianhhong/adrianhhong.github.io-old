@@ -43,7 +43,7 @@
     </header>
 
     <section class="container">
-      <h2 class="text--color-about">about</h2>
+      <h2 class="title--about">about</h2>
       <p>
         Heyo! I'm <b>Adrian Hong</b> a software developer based in
         <b>Melbourne, Australia</b>. I enjoy curating memorable products that
@@ -54,51 +54,48 @@
         <br />
         Technologies I have worked with:
       </p>
-
-      <h4>
-        <ul>
-          <li>
-            <span class="mdi mdi__technologies mdi-language-javascript"></span>
-            JavaScript
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-language-typescript"></span>
-            TypeScript
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-vuejs"></span>
-            Vue.js
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-language-html5"></span>
-            HTML5
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-nodejs"></span>
-            Node.js
-          </li>
-          <li>
-            <img src="@/assets/expressjs.svg" alt="ExpressJS" />
-            Express.js
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-language-css3"></span>
-            CSS
-          </li>
-          <li>
-            <img src="@/assets/mongodb.svg" alt="MongoDB" />
-            MongoDB
-          </li>
-          <li>
-            <span class="mdi mdi__technologies mdi-git"></span>
-            Git
-          </li>
-        </ul>
+      <h4 class="tech">
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-language-javascript"></span>
+          JavaScript
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-language-typescript"></span>
+          TypeScript
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-vuejs"></span>
+          Vue.js
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-language-html5"></span>
+          HTML5
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-nodejs"></span>
+          Node.js
+        </div>
+        <div class="tech__box">
+          <img src="@/assets/expressjs.svg" alt="ExpressJS" />
+          Express.js
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-language-css3"></span>
+          CSS
+        </div>
+        <div class="tech__box">
+          <img src="@/assets/mongodb.svg" alt="MongoDB" />
+          MongoDB
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-git"></span>
+          Git
+        </div>
       </h4>
     </section>
 
     <section class="container work">
-      <h2 class="text--color-work">experience</h2>
+      <h2 class="title--experience">experience</h2>
       <h3 class="work__subtitle">work</h3>
       <hr />
       <div class="work__item">
@@ -155,7 +152,7 @@
     </section>
 
     <section class="container">
-      <h2 class="text--color-projects">projects</h2>
+      <h2 class="title--projects">projects</h2>
       <div class="project">
         <img
           src="@/assets/crabandcoconuts.png"
@@ -180,14 +177,14 @@
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-web"></span>
+          <span class="mdi mdi__projects mdi-web"></span>
         </a>
         <a
           href="https://github.com/adrianhhong/crabandcoconuts"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-github"></span>
+          <span class="mdi mdi__projects mdi-github"></span>
         </a>
       </div>
       <div class="project">
@@ -204,20 +201,20 @@
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-web"></span>
+          <span class="mdi mdi__projects mdi-web"></span>
         </a>
         <a
           href="https://github.com/adrianhhong/just-one"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi-github"></span>
+          <span class="mdi mdi__projects mdi-github"></span>
         </a>
       </div>
     </section>
 
     <section class="container">
-      <h2 class="text--color-contact">connect</h2>
+      <h2 class="title--connect">connect</h2>
       <p>Give me a buzz yea?</p>
       <a
         href="mailto: adrianhhong@gmail.com"
@@ -254,6 +251,7 @@ export default {
 </script>
 
 <style scoped>
+/* Main */
 p {
   font-size: 33rem;
 }
@@ -272,6 +270,60 @@ h4 {
 
 h5 {
   font-size: 20rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--tertiary-color);
+}
+
+.container {
+  width: min(90%, 1500rem);
+  margin-inline: auto;
+  padding: 10rem 0;
+}
+
+/* Header */
+.header {
+  height: 100vh;
+  width: calc(100vw - (100vw - 100%));
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.header__name {
+  font-size: clamp(55rem, 5vw, 85rem);
+  font-weight: bold;
+  letter-spacing: 8rem;
+  position: absolute;
+  top: 60rem;
+  left: 60rem;
+}
+
+.header__subtitle {
+  font-size: clamp(25rem, 2vw, 85rem);
+  letter-spacing: 2rem;
+  position: absolute;
+  top: 190rem;
+  left: 60rem;
+}
+
+.header__scroll {
+  position: absolute;
+  bottom: 60rem;
+  left: 60rem;
+}
+
+.header__description {
+  font-size: clamp(25rem, 2vw, 35rem);
+  position: absolute;
+  bottom: 60rem;
+  right: 60rem;
+  text-align: right;
 }
 
 .header__color {
@@ -349,119 +401,27 @@ h5 {
   }
 }
 
-.project {
-  justify-content: center;
-  border-radius: 16rem;
-  border: solid 1em var(--primary-color);
-  padding: 30rem;
-  margin: 36rem 0;
-}
-
-.chip {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  border-radius: 9999px;
-  border: solid 2em var(--primary-color);
-  padding: 7rem 20rem;
-  margin: 0 16rem 16rem 0;
-}
-
-.chip__label {
-  font-size: 20rem;
-  font-weight: bold;
-}
-
-ul {
-  list-style-type: none;
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
-
-li {
-  height: 60rem;
-  line-height: 200%;
-}
-
-.mdi__contact {
-  font-size: 48rem;
+/* About */
+.title--about {
+  color: var(--accent1-color);
 }
 
 .mdi__technologies {
   font-size: 36rem;
 }
 
-.header {
-  height: 100vh;
-  width: calc(100vw - (100vw - 100%));
-  background: var(--primary-color);
-  color: var(--secondary-color);
+.tech {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.header__name {
-  font-size: clamp(55rem, 5vw, 85rem);
-  font-weight: bold;
-  letter-spacing: 8rem;
-  position: absolute;
-  top: 60rem;
-  left: 60rem;
+.tech__box {
+  width: 500rem;
 }
 
-.header__subtitle {
-  font-size: clamp(25rem, 2vw, 85rem);
-  letter-spacing: 2rem;
-  position: absolute;
-  top: 190rem;
-  left: 60rem;
-}
-
-.header__scroll {
-  position: absolute;
-  bottom: 60rem;
-  left: 60rem;
-}
-
-.header__description {
-  font-size: clamp(25rem, 2vw, 35rem);
-  position: absolute;
-  bottom: 60rem;
-  right: 60rem;
-  text-align: right;
-}
-
-a {
-  color: inherit;
-  text-decoration: none; /* no underline */
-}
-
-a:hover {
-  color: var(--tertiary-color);
-}
-
-.text--color-about {
-  color: var(--accent1-color);
-}
-
-.text--color-work {
+/* Experience */
+.title--experience {
   color: var(--accent2-color);
-}
-
-.text--color-projects {
-  color: var(--accent3-color);
-}
-
-.text--color-contact {
-  color: var(--accent4-color);
-}
-
-section {
-  padding: 10rem 0;
-}
-
-.container {
-  width: min(90%, 1500rem);
-  margin-inline: auto;
 }
 
 .work h3 {
@@ -503,6 +463,47 @@ section {
   text-align: start;
 }
 
+/* Projects */
+.title--projects {
+  color: var(--accent3-color);
+}
+
+.project {
+  justify-content: center;
+  border-radius: 16rem;
+  border: solid 1em var(--primary-color);
+  padding: 30rem;
+  margin: 36rem 0;
+}
+
+.chip {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 9999px;
+  border: solid 2em var(--primary-color);
+  padding: 7rem 20rem;
+  margin: 0 16rem 16rem 0;
+}
+
+.chip__label {
+  font-size: 20rem;
+  font-weight: bold;
+}
+
+.mdi__projects {
+  font-size: 56rem;
+}
+
+/* Connect */
+.title--connect {
+  color: var(--accent4-color);
+}
+
+.mdi__contact {
+  font-size: 48rem;
+}
+
 @media (max-width: 800px) {
   p {
     font-size: 20rem;
@@ -527,12 +528,6 @@ section {
   .chip__label {
     font-size: 15rem;
     font-weight: bold;
-  }
-
-  ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
   }
 }
 </style>
