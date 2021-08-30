@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="header">
+    <header class="header header--font">
       <div class="header__color">
         <div>
           <div class="header__color--1"></div>
@@ -11,13 +11,12 @@
           <div class="header__color--4"></div>
         </div>
       </div>
-      <span class="header__name">Adrian Hong</span>
-      <span class="header__subtitle">Software Developer</span>
-      <div class="header__scroll">
+      <span class="header__name header--left">Adrian Hong</span>
+      <span class="header__subtitle header--left">Software Developer</span>
+      <div class="header__scroll header--left">
         <span class="mdi mdi__contact mdi-chevron-double-down"></span>
       </div>
       <div class="header__description">
-        <span>Melbourne, Australia <br />2021<br /></span>
         <a
           href="mailto: adrianhhong@gmail.com"
           target="_blank"
@@ -43,13 +42,12 @@
     </header>
 
     <section class="container">
-      <h2 class="title--about">about</h2>
+      <h2 class="title--about header--font">about</h2>
       <p>
-        Heyo! I'm <b>Adrian Hong</b> a software developer based in
-        <b>Melbourne, Australia</b>. I enjoy curating memorable products that
-        are not only functional, but maintainable. I currently work at
-        <b>Telstra</b>
-        doing full-stack on the internal API Gateway for Telstra's networks.
+        Heyo! I'm <b class="header--font">Adrian Hong</b> a software developer
+        based in Melbourne, Australia. I enjoy curating memorable products that
+        are not only functional, but maintainable. I currently work at Telstra
+        doing full-stack on the API Gateway for internal networks.
         <br />
         <br />
         Technologies I have worked with:
@@ -95,7 +93,7 @@
     </section>
 
     <section class="container work">
-      <h2 class="title--experience">experience</h2>
+      <h2 class="title--experience header--font">experience</h2>
       <h3 class="work__subtitle">work</h3>
       <hr />
       <div class="work__item">
@@ -104,7 +102,7 @@
           <h5>2020 – Present</h5>
         </div>
         <div class="work__detail">
-          <h4>Software Engineer</h4>
+          <h4>Software Developer</h4>
         </div>
       </div>
       <hr />
@@ -114,7 +112,8 @@
           <h5>2018 – 2019</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern • Instrument Controls Engineer</h4>
+          <h4>Instrument Controls Engineer</h4>
+          <p>Internship</p>
         </div>
       </div>
       <hr />
@@ -124,7 +123,8 @@
           <h5>2018 – 2018</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern • Data Engineer</h4>
+          <h4>Data Engineer</h4>
+          <p>Internship</p>
         </div>
       </div>
       <hr />
@@ -134,7 +134,8 @@
           <h5>2017 – 2018</h5>
         </div>
         <div class="work__detail">
-          <h4>Intern • Network Engineer</h4>
+          <h4>Network Engineer</h4>
+          <p>Internship</p>
         </div>
       </div>
       <h3 class="work__subtitle">education</h3>
@@ -152,69 +153,107 @@
     </section>
 
     <section class="container">
-      <h2 class="title--projects">projects</h2>
-      <div class="project">
-        <img
-          src="@/assets/crabandcoconuts.png"
-          alt="crab1"
-          width="550em"
-          style="margin: 20rem; float: right"
-        />
-        <h3>
-          <router-link to="crab">Crab & Coconuts</router-link>
-        </h3>
-        <div class="chip"><div class="chip__label">Vue.js</div></div>
-        <div class="chip"><div class="chip__label">Socket.IO</div></div>
-        <div class="chip"><div class="chip__label">Typescript</div></div>
-        <div class="chip"><div class="chip__label">Node.js</div></div>
-        <div class="chip"><div class="chip__label">Express.js</div></div>
-        <h4>
-          An online adaption of the bluffing based board game called Skull &
-          Roses, but redesigned because crabs are cool.
-        </h4>
-        <a
-          href="http://crabandcoconuts.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <span class="mdi mdi__projects mdi-web"></span>
-        </a>
-        <a
-          href="https://github.com/adrianhhong/crabandcoconuts"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <span class="mdi mdi__projects mdi-github"></span>
-        </a>
+      <h2 class="title--projects header--font">projects</h2>
+      <div class="project project--wrap">
+        <div class="project__item">
+          <a
+            href="https://github.com/adrianhhong/crabandcoconuts"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <video class="video" autoplay muted loop>
+              <source src="./videos/crabandcoconuts.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </a>
+        </div>
+        <div class="project__item">
+          <h3>
+            <a
+              href="https://github.com/adrianhhong/crabandcoconuts"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Crab & Coconuts
+            </a>
+          </h3>
+          <div class="chip"><div class="chip__label">Vue.js</div></div>
+          <div class="chip"><div class="chip__label">Typescript</div></div>
+          <div class="chip"><div class="chip__label">Javascript</div></div>
+          <div class="chip"><div class="chip__label">HTML</div></div>
+          <div class="chip"><div class="chip__label">CSS</div></div>
+          <div class="chip"><div class="chip__label">Socket.IO</div></div>
+          <h4>
+            An online adaption of the bluffing based board game called Skull &
+            Roses, but redesigned because 🦀 crabs are cool 🦀.
+          </h4>
+          <a
+            href="http://crabandcoconuts.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-web"></span>
+          </a>
+          <a
+            href="https://github.com/adrianhhong/crabandcoconuts"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-github"></span>
+          </a>
+        </div>
       </div>
-      <div class="project">
-        <h3>
-          <router-link to="just-one">Just One </router-link>
-        </h3>
-        <div class="chip"><div class="chip__label">Javascript</div></div>
-        <div class="chip"><div class="chip__label">Socket.IO</div></div>
-        <div class="chip"><div class="chip__label">HTML</div></div>
-        <div class="chip"><div class="chip__label">CSS</div></div>
-        <h4>An online adaption of the board game Just One.</h4>
-        <a
-          href="https://justonegame.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <span class="mdi mdi__projects mdi-web"></span>
-        </a>
-        <a
-          href="https://github.com/adrianhhong/just-one"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          <span class="mdi mdi__projects mdi-github"></span>
-        </a>
+      <div class="project project--wrap">
+        <div class="project__item">
+          <a
+            href="https://github.com/adrianhhong/just-one"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <video class="video" autoplay muted loop>
+              <source src="./videos/justone.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </a>
+        </div>
+        <div class="project__item">
+          <h3>
+            <a
+              href="https://github.com/adrianhhong/just-one"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Just One
+            </a>
+          </h3>
+          <div class="chip"><div class="chip__label">Javascript</div></div>
+          <div class="chip"><div class="chip__label">HTML</div></div>
+          <div class="chip"><div class="chip__label">CSS</div></div>
+          <div class="chip"><div class="chip__label">Socket.IO</div></div>
+          <h4>
+            An online adaption of the board game Just One (a co-operative,
+            word-guessing party game).
+          </h4>
+          <a
+            href="https://justonegame.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-web"></span>
+          </a>
+          <a
+            href="https://github.com/adrianhhong/just-one"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-github"></span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section class="container">
-      <h2 class="title--connect">connect</h2>
+      <h2 class="title--connect header--font">connect</h2>
       <p>Give me a buzz yea?</p>
       <a
         href="mailto: adrianhhong@gmail.com"
@@ -238,9 +277,6 @@
         <span class="mdi mdi__contact mdi-github"></span>
       </a>
     </section>
-    <small style="text-align: end; margin-top: 80px">
-      This website was made by Adrian Hong using Vue.js :)
-    </small>
   </div>
 </template>
 
@@ -287,6 +323,10 @@ a:hover {
   padding: 10rem 0;
 }
 
+.header--font {
+  font-family: var(--header);
+}
+
 /* Header */
 .header {
   height: 100vh;
@@ -296,25 +336,26 @@ a:hover {
 }
 
 .header__name {
-  font-size: clamp(55rem, 5vw, 85rem);
+  font-size: clamp(35rem, 7vw, 85rem);
   font-weight: bold;
   letter-spacing: 8rem;
   position: absolute;
   top: 60rem;
-  left: 60rem;
 }
 
 .header__subtitle {
-  font-size: clamp(25rem, 2vw, 85rem);
+  font-size: clamp(20rem, 2vw, 50rem);
   letter-spacing: 2rem;
   position: absolute;
   top: 190rem;
-  left: 60rem;
 }
 
 .header__scroll {
   position: absolute;
   bottom: 60rem;
+}
+
+.header--left {
   left: 60rem;
 }
 
@@ -416,7 +457,8 @@ a:hover {
 }
 
 .tech__box {
-  width: 500rem;
+  flex-grow: 1;
+  width: 33%;
 }
 
 /* Experience */
@@ -474,6 +516,11 @@ a:hover {
   border: solid 1em var(--primary-color);
   padding: 30rem;
   margin: 36rem 0;
+  display: flex;
+}
+
+.project__item {
+  margin: 0 30rem;
 }
 
 .chip {
@@ -482,7 +529,7 @@ a:hover {
   justify-content: center;
   border-radius: 9999px;
   border: solid 2em var(--primary-color);
-  padding: 7rem 20rem;
+  padding: 4rem 20rem;
   margin: 0 16rem 16rem 0;
 }
 
@@ -493,6 +540,10 @@ a:hover {
 
 .mdi__projects {
   font-size: 56rem;
+}
+
+.video {
+  width: clamp(320px, 75vw, 800px);
 }
 
 /* Connect */
@@ -525,9 +576,25 @@ a:hover {
     font-size: 15rem;
   }
 
+  .header--left {
+    left: 20rem;
+  }
+
   .chip__label {
     font-size: 15rem;
     font-weight: bold;
+  }
+
+  .tech__box {
+    flex-grow: 1;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .project--wrap {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
 </style>

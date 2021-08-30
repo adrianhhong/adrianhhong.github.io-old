@@ -1,25 +1,15 @@
 :root {
   font-size: 6.25%;
 
-  /* --primary-color: #1e3c49; */
-  /* --secondary-color: #ebe5e4; */
-  /* --secondary-color: #fbc7bc; */
-
-  /* --secondary-color: #292a2c;
-  --primary-color: #c7afac; */
-
-  /* --primary-color: #9cb8dc;
-  --secondary-color: #191a1a; */
-
-  /* --primary-color: #8ca7ae;
-  --secondary-color: #191a1a; */
   --primary-color: #eee;
   --secondary-color: #191a1a;
-  --tertiary-color: #827a73;
+  --tertiary-color: #b168b1;
 
   --accent1-color: #c99644;
   --accent2-color: #da5747;
   --accent3-color: #538f74;
   --accent4-color: #6894b1;
   --accent5-color: #b168b1;
+
+  --header: "Poppins", sans-serif;
 }
