@@ -1,22 +1,18 @@
 <template>
   <div>
     <header class="header">
-      <div class="header__color">
-        <div>
-          <div class="header__color--1"></div>
-          <div class="header__color--2"></div>
+      <div class="header__titles header--left">
+        <div style="line-height: 100%" class="header__name header--font">
+          Adrian<br />
+          Hong
         </div>
-        <div>
-          <div class="header__color--3"></div>
-          <div class="header__color--4"></div>
-        </div>
+        <br />
+        <div class="header__subtitle">Software Developer</div>
       </div>
-      <span class="header__name header--left header--font">Adrian Hong</span>
-      <span class="header__subtitle header--left">Software Developer</span>
       <div class="header__scroll header--left">
         <span class="mdi mdi__contact mdi-chevron-double-down"></span>
       </div>
-      <div class="header__description">
+      <div class="header__description header--right">
         <a
           href="mailto: adrianhhong@gmail.com"
           target="_blank"
@@ -286,8 +282,15 @@ import { gsap } from "gsap";
 export default {
   name: "Home",
   mounted: function () {
-    gsap.to(".header__name", { x: 300, duration: 3 });
-    gsap.to(".header__subtitle", { x: 300, duration: 3 });
+    var tl = gsap.timeline();
+    tl.from(".header__name", { y: 300, opacity: 0.5, duration: 1.2 });
+    tl.from(".header__subtitle", {
+      y: 100,
+      opacity: 0,
+      duration: 0.3,
+      delay: 0.2,
+    });
+    tl.play();
   },
 };
 </script>
@@ -341,19 +344,20 @@ a:hover {
   color: var(--secondary-color);
 }
 
+.header__titles {
+  position: absolute;
+  top: 100rem;
+}
+
 .header__name {
-  font-size: 85rem;
+  font-size: clamp(70rem, 22vw, 585rem);
   font-weight: bold;
   letter-spacing: 8rem;
-  position: absolute;
-  top: 60rem;
 }
 
 .header__subtitle {
-  font-size: 50rem;
+  font-size: clamp(20rem, 2vw, 100rem);
   letter-spacing: 2rem;
-  position: absolute;
-  top: 190rem;
 }
 
 .header__scroll {
@@ -365,87 +369,15 @@ a:hover {
   left: 60rem;
 }
 
+.header--right {
+  right: 60rem;
+}
+
 .header__description {
   font-size: clamp(25rem, 2vw, 35rem);
   position: absolute;
   bottom: 60rem;
-  right: 60rem;
   text-align: right;
-}
-
-.header__color {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 4rem auto;
-}
-
-.header__color--1,
-.header__color--2,
-.header__color--3,
-.header__color--4 {
-  display: inline-block;
-  width: 10vw;
-  height: 10vw;
-  margin: 30rem 30rem;
-  border-radius: 50%;
-  -webkit-animation-name: color;
-  animation-name: color;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-  animation-play-state: running;
-  -webkit-animation-timing-function: cubic-bezier(0.35, 0, 0.15, 1);
-  animation-timing-function: cubic-bezier(0.35, 0, 0.15, 1);
-}
-
-.header__color--1 {
-  background-color: var(--accent1-color);
-}
-
-.header__color--2 {
-  -webkit-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-  background-color: var(--accent2-color);
-}
-
-.header__color--3 {
-  -webkit-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-  background-color: var(--accent3-color);
-}
-
-.header__color--4 {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  background-color: var(--accent4-color);
-}
-
-@keyframes color {
-  0% {
-    -webkit-transform: rotateY(0) scale(1);
-    transform: rotateY(0) scale(1);
-  }
-  60% {
-    -webkit-transform: rotateY(0) scale(1);
-    transform: rotateY(0) scale(1);
-  }
-  70% {
-    -webkit-transform: rotateY(0) scale(0.9);
-    transform: rotateY(0) scale(0.9);
-  }
-  75% {
-    -webkit-transform: rotateY(0) scale(1.2);
-    transform: rotateY(0) scale(1.2);
-  }
-  100% {
-    -webkit-transform: rotateY(0) scale(1);
-    transform: rotateY(0) scale(1);
-  }
 }
 
 /* About */
@@ -490,7 +422,7 @@ a:hover {
 }
 
 .work__subtitle {
-  margin-top: 64rem;
+  margin-top: 40rem;
 }
 
 .work__item {
@@ -570,7 +502,7 @@ a:hover {
   }
 
   h3 {
-    font-size: 30rem;
+    font-size: 25rem;
   }
 
   h4 {
@@ -585,6 +517,20 @@ a:hover {
     left: 25rem;
   }
 
+  .header--right {
+    right: 25rem;
+  }
+
+  .chip {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 9999px;
+    border: solid 2em var(--primary-color);
+    padding: 4rem 12rem;
+    margin: 0 12rem 12rem 0;
+  }
+
   .chip__label {
     font-size: 15rem;
     font-weight: bold;
@@ -595,19 +541,12 @@ a:hover {
     width: 50%;
   }
 
-  .header__name {
-    font-size: 50rem;
-    font-weight: bold;
-    letter-spacing: 4rem;
-    position: absolute;
-    top: 160rem;
+  .mdi__projects {
+    font-size: 36rem;
   }
 
-  .header__subtitle {
-    font-size: 20rem;
-    letter-spacing: 2rem;
-    position: absolute;
-    top: 240rem;
+  .mdi__contact {
+    font-size: 36rem;
   }
 }
 
