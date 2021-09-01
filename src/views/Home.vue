@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="header header--font">
+    <header class="header">
       <div class="header__color">
         <div>
           <div class="header__color--1"></div>
@@ -11,7 +11,7 @@
           <div class="header__color--4"></div>
         </div>
       </div>
-      <span class="header__name header--left">Adrian Hong</span>
+      <span class="header__name header--left header--font">Adrian Hong</span>
       <span class="header__subtitle header--left">Software Developer</span>
       <div class="header__scroll header--left">
         <span class="mdi mdi__contact mdi-chevron-double-down"></span>
@@ -113,7 +113,7 @@
         </div>
         <div class="work__detail">
           <h4>Instrument Controls Engineer</h4>
-          <p>Internship</p>
+          <h5>Internship</h5>
         </div>
       </div>
       <hr />
@@ -124,7 +124,7 @@
         </div>
         <div class="work__detail">
           <h4>Data Engineer</h4>
-          <p>Internship</p>
+          <h5>Internship</h5>
         </div>
       </div>
       <hr />
@@ -135,7 +135,7 @@
         </div>
         <div class="work__detail">
           <h4>Network Engineer</h4>
-          <p>Internship</p>
+          <h5>Internship</h5>
         </div>
       </div>
       <h3 class="work__subtitle">education</h3>
@@ -147,7 +147,7 @@
         </div>
         <div class="work__detail">
           <h4>BEngineering & BCommerce (Honours)</h4>
-          <p>Electrical & Computer Systems Engineering • Accounting</p>
+          <h5>Electrical & Computer Systems Engineering • Accounting</h5>
         </div>
       </div>
     </section>
@@ -254,7 +254,7 @@
 
     <section class="container">
       <h2 class="title--connect header--font">connect</h2>
-      <p>Give me a buzz yea?</p>
+      <h3>Give me a buzz yea?</h3>
       <a
         href="mailto: adrianhhong@gmail.com"
         target="_blank"
@@ -281,8 +281,14 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+
 export default {
   name: "Home",
+  mounted: function () {
+    gsap.to(".header__name", { x: 300, duration: 3 });
+    gsap.to(".header__subtitle", { x: 300, duration: 3 });
+  },
 };
 </script>
 
@@ -336,7 +342,7 @@ a:hover {
 }
 
 .header__name {
-  font-size: clamp(35rem, 7vw, 85rem);
+  font-size: 85rem;
   font-weight: bold;
   letter-spacing: 8rem;
   position: absolute;
@@ -344,7 +350,7 @@ a:hover {
 }
 
 .header__subtitle {
-  font-size: clamp(20rem, 2vw, 50rem);
+  font-size: 50rem;
   letter-spacing: 2rem;
   position: absolute;
   top: 190rem;
@@ -479,7 +485,6 @@ a:hover {
 }
 
 .work p {
-  font-size: 18rem;
   text-align: start;
   margin: auto;
 }
@@ -491,7 +496,7 @@ a:hover {
 .work__item {
   display: flex;
   justify-content: space-between;
-  margin: 30rem;
+  margin: 15rem;
 }
 
 .work__title {
@@ -500,7 +505,7 @@ a:hover {
 }
 
 .work__detail {
-  margin-left: 100rem;
+  margin-left: 50rem;
   width: 600rem;
   text-align: start;
 }
@@ -514,13 +519,13 @@ a:hover {
   justify-content: center;
   border-radius: 16rem;
   border: solid 1em var(--primary-color);
-  padding: 30rem;
   margin: 36rem 0;
   display: flex;
+  gap: 45rem;
 }
 
-.project__item {
-  margin: 0 30rem;
+.project--wrap {
+  padding: 30rem;
 }
 
 .chip {
@@ -543,7 +548,7 @@ a:hover {
 }
 
 .video {
-  width: clamp(320px, 75vw, 800px);
+  width: clamp(1px, 75vw, 800px);
 }
 
 /* Connect */
@@ -552,7 +557,7 @@ a:hover {
 }
 
 .mdi__contact {
-  font-size: 48rem;
+  font-size: 72rem;
 }
 
 @media (max-width: 800px) {
@@ -565,11 +570,11 @@ a:hover {
   }
 
   h3 {
-    font-size: 35rem;
+    font-size: 30rem;
   }
 
   h4 {
-    font-size: 20rem;
+    font-size: 18rem;
   }
 
   h5 {
@@ -577,7 +582,7 @@ a:hover {
   }
 
   .header--left {
-    left: 20rem;
+    left: 25rem;
   }
 
   .chip__label {
@@ -589,12 +594,28 @@ a:hover {
     flex-grow: 1;
     width: 50%;
   }
+
+  .header__name {
+    font-size: 50rem;
+    font-weight: bold;
+    letter-spacing: 4rem;
+    position: absolute;
+    top: 160rem;
+  }
+
+  .header__subtitle {
+    font-size: 20rem;
+    letter-spacing: 2rem;
+    position: absolute;
+    top: 240rem;
+  }
 }
 
 @media (max-width: 1500px) {
   .project--wrap {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 30rem;
   }
 }
 </style>
