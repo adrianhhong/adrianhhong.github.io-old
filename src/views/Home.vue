@@ -1,16 +1,103 @@
 <template>
   <div>
     <header class="header">
-      <div class="header__titles header--left">
-        <div style="line-height: 100%" class="header__name header--font">
-          Adrian<br />
-          Hong
+      <div class="header__titles header--right">
+        <div class="header__name header--font">
+          adrian<br />
+          hong
         </div>
-        <br />
-        <div class="header__subtitle">Software Developer</div>
+        <div class="header__subtitle header--font">
+          software developer <br />melbourne, australia <br />
+          2021
+        </div>
       </div>
       <div class="header__scroll header--left">
-        <span class="mdi mdi__contact mdi-chevron-double-down"></span>
+        <svg
+          width="800"
+          height="800"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
+            fill="black"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
+            fill="#8A8A8A"
+          />
+          <circle
+            cx="64.7462"
+            cy="31"
+            r="19.5"
+            fill="black"
+            stroke="black"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="74.7462" cy="35" r="3" fill="white" />
+        </svg>
+
+        <!-- <span class="mdi mdi__contact mdi-chevron-double-down"></span> -->
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="100%"
+          viewBox="0 0 103.785 103.785"
+        >
+          <g transform="translate(51.892 -28.764) rotate(45)">
+            <g
+              transform="matrix(-0.875, 0.485, -0.485, -0.875, 114.066, 73.387)"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            >
+              <ellipse
+                cx="41.954"
+                cy="41.954"
+                rx="41.954"
+                ry="41.954"
+                stroke="none"
+              ></ellipse>
+              <ellipse
+                cx="41.954"
+                cy="41.954"
+                rx="41.454"
+                ry="41.454"
+                fill="none"
+              ></ellipse>
+            </g>
+            <path
+              d="M22.953,11.638A10.5,10.5,0,0,0,15.677.932C7.59-1.911,2.457,2.355,0,5.61"
+              transform="matrix(-0.875, 0.485, -0.485, -0.875, 57.727, 61.933)"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+            ></path>
+            <ellipse
+              cx="1.694"
+              cy="1.694"
+              rx="1.694"
+              ry="1.694"
+              transform="matrix(-0.875, 0.485, -0.485, -0.875, 53.153, 47.112)"
+              fill="currentColor"
+            ></ellipse>
+            <ellipse
+              cx="1.694"
+              cy="1.694"
+              rx="1.694"
+              ry="1.694"
+              transform="matrix(-0.875, 0.485, -0.485, -0.875, 31.697, 55.017)"
+              fill="currentColor"
+            ></ellipse>
+          </g>
+        </svg> -->
       </div>
       <div class="header__description header--right">
         <a
@@ -345,19 +432,24 @@ a:hover {
 }
 
 .header__titles {
+  width: calc(100vw - (100vw - 100%));
   position: absolute;
   top: 100rem;
 }
 
 .header__name {
-  font-size: clamp(70rem, 22vw, 585rem);
+  font-size: clamp(40rem, 16vw, 200rem);
   font-weight: bold;
   letter-spacing: 8rem;
+  text-align: right;
+  line-height: 100%;
+  margin-bottom: 10vh;
 }
 
 .header__subtitle {
-  font-size: clamp(20rem, 2vw, 100rem);
+  font-size: clamp(15rem, 2vw, 40rem);
   letter-spacing: 2rem;
+  text-align: right;
 }
 
 .header__scroll {
