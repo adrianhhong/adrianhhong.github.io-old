@@ -11,7 +11,7 @@
           2021
         </div>
       </div>
-      <div class="header__scroll header--left">
+      <div class="header__coot header--left">
         <svg
           width="800"
           height="800"
@@ -43,61 +43,24 @@
           />
           <circle cx="74.7462" cy="35" r="3" fill="white" />
         </svg>
-
-        <!-- <span class="mdi mdi__contact mdi-chevron-double-down"></span> -->
-        <!-- <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="100%"
-          height="100%"
-          viewBox="0 0 103.785 103.785"
+          width="300"
+          height="300"
+          viewBox="0 0 55 96"
+          fill="none"
+          transform="rotate(130) scale(-1,1)"
         >
-          <g transform="translate(51.892 -28.764) rotate(45)">
-            <g
-              transform="matrix(-0.875, 0.485, -0.485, -0.875, 114.066, 73.387)"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-            >
-              <ellipse
-                cx="41.954"
-                cy="41.954"
-                rx="41.954"
-                ry="41.954"
-                stroke="none"
-              ></ellipse>
-              <ellipse
-                cx="41.954"
-                cy="41.954"
-                rx="41.454"
-                ry="41.454"
-                fill="none"
-              ></ellipse>
-            </g>
-            <path
-              d="M22.953,11.638A10.5,10.5,0,0,0,15.677.932C7.59-1.911,2.457,2.355,0,5.61"
-              transform="matrix(-0.875, 0.485, -0.485, -0.875, 57.727, 61.933)"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-            ></path>
-            <ellipse
-              cx="1.694"
-              cy="1.694"
-              rx="1.694"
-              ry="1.694"
-              transform="matrix(-0.875, 0.485, -0.485, -0.875, 53.153, 47.112)"
-              fill="currentColor"
-            ></ellipse>
-            <ellipse
-              cx="1.694"
-              cy="1.694"
-              rx="1.694"
-              ry="1.694"
-              transform="matrix(-0.875, 0.485, -0.485, -0.875, 31.697, 55.017)"
-              fill="currentColor"
-            ></ellipse>
-          </g>
-        </svg> -->
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M51.7758 78.5911C48.7349 81.1765 45.7314 83.7898 42.6493 86.3473C41.7698 87.0768 40.3975 88.4426 38.8921 88.6862C46.1015 57.276 34.5834 20.1614 3.59885 0.489054C2.86674 0.0242343 2.10359 0.191066 1.85857 0.895334C1.7103 1.32149 1.56593 2.26516 6.36435 5.86587C31.8243 25.9621 43.9654 59.2528 35.6227 87.692C34.4413 86.7246 33.6698 85.3049 33.06 84.4193C28.8218 78.2758 30.8646 80.9967 26.7131 74.8208C25.6392 73.224 25.1233 75.7845 24.9955 76.3786C24.6403 78.0281 25.1184 79.9829 26.1782 81.5591C26.1782 81.5591 31.2683 90.3611 34.1809 93.1796C36.4324 95.3583 36.9515 95.2834 40.0072 93.5703C44.1821 91.229 47.8503 87.7302 51.2952 84.8041C52.6534 83.6498 53.5414 83.0317 53.3885 81.6219C53.3492 81.2541 52.747 77.766 51.7758 78.5911Z"
+            fill="#8A8A8A"
+          />
+        </svg>
+        <div style="margin-top: 50rem" class="header__subtitle">
+          A Eurasian coot
+        </div>
       </div>
       <div class="header__description header--right">
         <a
@@ -377,6 +340,12 @@ export default {
       duration: 0.3,
       delay: 0.2,
     });
+    tl.from(".header__coot", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
+    });
     tl.play();
   },
 };
@@ -452,7 +421,7 @@ a:hover {
   text-align: right;
 }
 
-.header__scroll {
+.header__coot {
   position: absolute;
   bottom: 60rem;
 }
