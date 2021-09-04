@@ -11,7 +11,7 @@
   font-family: "Gowun Batang", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--primary-color);
+  color: var(--text-color);
 }
 
 body {
