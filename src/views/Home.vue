@@ -35,44 +35,41 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="header__coot">
-        <div style="margin-left: 250rem; font-size: 30rem">
-          I'm a Eurasian coot!
-        </div>
-        <div>
-          <svg
-            width="50%"
-            height="auto"
-            viewBox="0 0 100 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
-              fill="#191a1a"
-              stroke="#191a1a"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
-              fill="#8A8A8A"
-            />
-            <circle
-              cx="64.7462"
-              cy="31"
-              r="19.5"
-              fill="#191a1a"
-              stroke="#191a1a"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <circle cx="74.7462" cy="35" r="3" fill="white" />
-          </svg>
-          <h5 class="coot__click">click me!</h5>
+        <div class="header__coot">
+          <div style="font-size: 20rem">I'm a Eurasian coot!</div>
+          <div>
+            <svg
+              width="50%"
+              height="auto"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
+                fill="#191a1a"
+                stroke="#191a1a"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
+                fill="#8A8A8A"
+              />
+              <circle
+                cx="64.7462"
+                cy="31"
+                r="19.5"
+                fill="#191a1a"
+                stroke="#191a1a"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="74.7462" cy="35" r="3" fill="white" />
+            </svg>
+          </div>
         </div>
       </div>
     </header>
@@ -401,8 +398,52 @@ a:hover {
 .header {
   min-height: 100vh;
   width: calc(100vw - (100vw - 100%));
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
   color: var(--secondary-color);
+  -webkit-animation: background-animate 30s linear infinite;
+  animation: background-animate 30s linear infinite;
+}
+
+@keyframes background-animate {
+  0% {
+    background-color: var(--accent1-color);
+  }
+  20% {
+    background-color: var(--accent2-color);
+  }
+  40% {
+    background-color: var(--accent3-color);
+  }
+  60% {
+    background-color: var(--accent4-color);
+  }
+  80% {
+    background-color: var(--accent5-color);
+  }
+  100% {
+    background-color: var(--accent1-color);
+  }
+}
+
+@keyframes color-animate {
+  0% {
+    color: var(--accent1-color);
+  }
+  20% {
+    color: var(--accent2-color);
+  }
+  40% {
+    color: var(--accent3-color);
+  }
+  60% {
+    color: var(--accent4-color);
+  }
+  80% {
+    color: var(--accent5-color);
+  }
+  100% {
+    color: var(--accent1-color);
+  }
 }
 
 .header--min-height {
@@ -411,6 +452,7 @@ a:hover {
 
 .header--right {
   text-align: right;
+  padding: 3vw;
 }
 
 .header__name {
@@ -429,16 +471,15 @@ a:hover {
 
 .header__coot {
   position: absolute;
-  bottom: 60rem;
-}
-
-.coot_click {
-  margin-top: 50rem;
+  bottom: 3vw;
+  left: 3vw;
 }
 
 /* About */
 .title--about {
-  color: var(--accent1-color);
+  /* color: var(--accent1-color); */
+  -webkit-animation: color-animate 30s linear infinite;
+  animation: color-animate 30s linear infinite;
 }
 
 .mdi__technologies {
@@ -457,7 +498,9 @@ a:hover {
 
 /* Experience */
 .title--experience {
-  color: var(--accent2-color);
+  /* color: var(--accent2-color); */
+  -webkit-animation: color-animate 30s linear infinite;
+  animation: color-animate 30s linear infinite;
 }
 
 .work h3 {
@@ -500,7 +543,9 @@ a:hover {
 
 /* Projects */
 .title--projects {
-  color: var(--accent3-color);
+  /* color: var(--accent3-color); */
+  -webkit-animation: color-animate 30s linear infinite;
+  animation: color-animate 30s linear infinite;
 }
 
 .project {
@@ -541,7 +586,9 @@ a:hover {
 
 /* Connect */
 .title--connect {
-  color: var(--accent4-color);
+  /* color: var(--accent4-color); */
+  -webkit-animation: color-animate 30s linear infinite;
+  animation: color-animate 30s linear infinite;
 }
 
 .mdi__contact {
