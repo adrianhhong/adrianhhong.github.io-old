@@ -36,7 +36,6 @@
           </div>
         </div>
         <div class="header__coot">
-          <div style="font-size: 20rem">I'm a Eurasian coot!</div>
           <div>
             <svg
               width="50%"
@@ -79,8 +78,9 @@
       <p>
         Heyo! I'm <b class="header--font">Adrian Hong</b> a software developer
         based in Melbourne, Australia. I enjoy curating memorable products that
-        are not only functional, but maintainable. I currently work at Telstra
-        doing full-stack on the API Gateway for internal networks.
+        are not only functional, but aesthetic too. I currently work at Telstra
+        as a full-stack engineer, developing the API Gateway for internal
+        networks.
         <br />
         <br />
         Technologies I have worked with:
@@ -287,28 +287,57 @@
 
     <section class="container">
       <h2 class="title--connect header--font">connect</h2>
-      <h3>Give me a buzz yea?</h3>
-      <a
-        href="mailto: adrianhhong@gmail.com"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <span class="mdi mdi__contact mdi-email"></span>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/adrianhhong/"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <span class="mdi mdi__contact mdi-linkedin"></span>
-      </a>
-      <a
-        href="https://github.com/adrianhhong"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <span class="mdi mdi__contact mdi-github"></span>
-      </a>
+      <h3>Send me a Hiii<sup>1</sup> or Heyyy<sup>2</sup>!</h3>
+      <h5>
+        <sup>1</sup>
+        <a
+          href="https://youtu.be/X74OxXravDo"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          With a bunch of I's </a
+        ><br />
+        <sup>2</sup>
+        <a
+          href="https://youtu.be/X74OxXravDo"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          With a bunch of Y's
+        </a>
+      </h5>
+      <div style="display: flex; justify-content: space-between">
+        <div>
+          <a
+            href="mailto: adrianhhong@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__contact mdi-email"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adrianhhong/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__contact mdi-linkedin"></span>
+          </a>
+          <a
+            href="https://github.com/adrianhhong"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__contact mdi-github"></span>
+          </a>
+        </div>
+        <div>
+          <a
+            onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+            class="mdi mdi__contact mdi-arrow-up"
+          >
+          </a>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -384,6 +413,10 @@ a:hover {
   color: var(--tertiary-color);
 }
 
+sup {
+  font-size: 20rem;
+}
+
 .container {
   width: min(90%, 1500rem);
   margin-inline: auto;
@@ -400,8 +433,8 @@ a:hover {
   width: calc(100vw - (100vw - 100%));
   /* background: var(--primary-color); */
   color: var(--secondary-color);
-  -webkit-animation: background-animate 30s linear infinite;
-  animation: background-animate 30s linear infinite;
+  -webkit-animation: background-animate 15s linear infinite;
+  animation: background-animate 15s linear infinite;
 }
 
 @keyframes background-animate {
@@ -478,8 +511,8 @@ a:hover {
 /* About */
 .title--about {
   /* color: var(--accent1-color); */
-  -webkit-animation: color-animate 30s linear infinite;
-  animation: color-animate 30s linear infinite;
+  -webkit-animation: color-animate 15s linear infinite;
+  animation: color-animate 15s linear infinite;
 }
 
 .mdi__technologies {
@@ -499,8 +532,8 @@ a:hover {
 /* Experience */
 .title--experience {
   /* color: var(--accent2-color); */
-  -webkit-animation: color-animate 30s linear infinite;
-  animation: color-animate 30s linear infinite;
+  -webkit-animation: color-animate 15s linear infinite;
+  animation: color-animate 15s linear infinite;
 }
 
 .work h3 {
@@ -544,8 +577,8 @@ a:hover {
 /* Projects */
 .title--projects {
   /* color: var(--accent3-color); */
-  -webkit-animation: color-animate 30s linear infinite;
-  animation: color-animate 30s linear infinite;
+  -webkit-animation: color-animate 15s linear infinite;
+  animation: color-animate 15s linear infinite;
 }
 
 .project {
@@ -587,8 +620,8 @@ a:hover {
 /* Connect */
 .title--connect {
   /* color: var(--accent4-color); */
-  -webkit-animation: color-animate 30s linear infinite;
-  animation: color-animate 30s linear infinite;
+  -webkit-animation: color-animate 15s linear infinite;
+  animation: color-animate 15s linear infinite;
 }
 
 .mdi__contact {
@@ -613,6 +646,10 @@ a:hover {
   }
 
   h5 {
+    font-size: 15rem;
+  }
+
+  sup {
     font-size: 15rem;
   }
 

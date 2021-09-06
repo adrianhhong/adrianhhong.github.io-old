@@ -3,27 +3,13 @@
   --header: "Poppins", sans-serif;
 
   --text-color: #eee;
-  --primary-color: #9cb8dc;
-  /* --primary-color: #dcb29c; */
+  --primary-color: #eee;
   --secondary-color: #191a1a;
   --tertiary-color: #7d7b7b;
-
-  /* --primary-color: #1e3c49; */
-  /* --secondary-color: #ebe5e4; */
-  /* --secondary-color: #fbc7bc; */
-
-  /* --secondary-color: #292a2c;
-  --primary-color: #c7afac; */
 
   --accent1-color: #c99644;
   --accent2-color: #da5747;
   --accent3-color: #538f74;
   --accent4-color: #6894b1;
   --accent5-color: #b168b1;
-
-  /* --accent1-color: #9cb8dc;
-  --accent2-color: #9cb8dc;
-  --accent3-color: #9cb8dc;
-  --accent4-color: #9cb8dc;
-  --accent5-color: #9cb8dc; */
 }
