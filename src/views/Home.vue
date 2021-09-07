@@ -38,6 +38,7 @@
         <div class="header__coot">
           <div>
             <svg
+              id="coot"
               width="50%"
               height="auto"
               viewBox="0 0 100 100"
@@ -54,7 +55,7 @@
               />
               <path
                 d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
-                fill="#8A8A8A"
+                fill="#fff"
               />
               <circle
                 cx="64.7462"
@@ -78,12 +79,12 @@
       <p>
         Heyo! I'm <b class="header--font">Adrian Hong</b> a software developer
         based in Melbourne, Australia. I enjoy curating memorable products that
-        are not only functional, but aesthetic too. I currently work at Telstra
-        as a full-stack engineer, developing the API Gateway for internal
-        networks.
+        are not only functional, but are aesthetically pleasing too. I currently
+        work at Telstra as a full-stack engineer, developing the API Gateway for
+        internal networks.
         <br />
         <br />
-        Technologies I have worked with:
+        Technologies I have worked with include:
       </p>
       <h4 class="tech">
         <div class="tech__box">
@@ -146,7 +147,7 @@
         </div>
         <div class="work__detail">
           <h4>Instrument Controls Engineer</h4>
-          <h5>Internship</h5>
+          <h5><span class="mdi mdi-school" /> Internship</h5>
         </div>
       </div>
       <hr />
@@ -157,7 +158,7 @@
         </div>
         <div class="work__detail">
           <h4>Data Engineer</h4>
-          <h5>Internship</h5>
+          <h5><span class="mdi mdi-school" /> Internship</h5>
         </div>
       </div>
       <hr />
@@ -168,7 +169,7 @@
         </div>
         <div class="work__detail">
           <h4>Network Engineer</h4>
-          <h5>Internship</h5>
+          <h5><span class="mdi mdi-school" /> Internship</h5>
         </div>
       </div>
       <h3 class="work__subtitle">education</h3>
@@ -506,6 +507,26 @@ sup {
   position: absolute;
   bottom: 3vw;
   left: 3vw;
+}
+
+#coot {
+  animation-name: bounce;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  50% {
+    transform: translateY(50px);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* About */
