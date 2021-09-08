@@ -35,6 +35,14 @@
             </a>
           </div>
         </div>
+        <div id="header__scroll">
+          <a
+            onClick="document.getElementById('main__section').scrollIntoView({ block: 'start',  behavior: 'smooth'});"
+            class="mdi mdi__contact mdi-arrow-down"
+            style="cursor: pointer"
+          >
+          </a>
+        </div>
         <div class="header__coot">
           <div>
             <svg
@@ -74,7 +82,7 @@
       </div>
     </header>
 
-    <section class="container">
+    <section id="main__section" class="container">
       <h2 class="title--about header--font">about</h2>
       <p>
         Heyo! I'm <b class="header--font">Adrian Hong</b> a software developer
@@ -335,6 +343,7 @@
           <a
             onclick='window.scrollTo({top: 0, behavior: "smooth"});'
             class="mdi mdi__contact mdi-arrow-up"
+            style="cursor: pointer"
           >
           </a>
         </div>
@@ -371,6 +380,11 @@ export default {
       y: 100,
       opacity: 0,
       duration: 0.1,
+    });
+    tl.from("#header__scroll", {
+      y: -100,
+      opacity: 0,
+      duration: 0.3,
     });
     tl.from(".header__coot", {
       x: -100,
@@ -507,6 +521,12 @@ sup {
   position: absolute;
   bottom: 3vw;
   left: 3vw;
+}
+
+#header__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 2vh;
 }
 
 #coot {
