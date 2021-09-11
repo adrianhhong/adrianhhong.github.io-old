@@ -46,12 +46,14 @@
         <div class="header__coot">
           <div>
             <svg
-              id="coot"
               width="50%"
               height="auto"
               viewBox="0 0 100 100"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              @click="cootClassActive = !cootClassActive"
+              :class="{ coot: cootClassActive }"
+              style="cursor: pointer"
             >
               <path
                 d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
@@ -357,6 +359,11 @@ import { gsap } from "gsap";
 
 export default {
   name: "Home",
+  data: function () {
+    return {
+      cootClassActive: true,
+    };
+  },
   mounted: function () {
     var tl = gsap.timeline();
     tl.from(".header__name", { y: 100, opacity: 0, duration: 0.5 });
@@ -529,7 +536,7 @@ sup {
   bottom: 2vh;
 }
 
-#coot {
+.coot {
   animation-name: bounce;
   animation-duration: 600ms;
   animation-iteration-count: infinite;
