@@ -223,7 +223,6 @@
           </h3>
           <div class="chip"><div class="chip__label">Vue.js</div></div>
           <div class="chip"><div class="chip__label">Typescript</div></div>
-          <div class="chip"><div class="chip__label">Javascript</div></div>
           <div class="chip"><div class="chip__label">HTML</div></div>
           <div class="chip"><div class="chip__label">CSS</div></div>
           <div class="chip"><div class="chip__label">Socket.IO</div></div>
@@ -240,6 +239,49 @@
           </a>
           <a
             href="https://github.com/adrianhhong/crabandcoconuts"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-github"></span>
+          </a>
+        </div>
+      </div>
+      <div class="project project--wrap">
+        <div class="project__item">
+          <a
+            href="https://github.com/adrianhhong/fake-ecommerce"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <video class="video" autoplay muted loop>
+              <source src="./videos/fake-ecommerce.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </a>
+        </div>
+        <div class="project__item">
+          <h3>
+            <a
+              href="https://github.com/adrianhhong/fake-ecommerce"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Fake E-commerce Site
+            </a>
+          </h3>
+          <div class="chip"><div class="chip__label">React.js</div></div>
+          <div class="chip"><div class="chip__label">Typescript</div></div>
+          <div class="chip"><div class="chip__label">Material UI</div></div>
+          <h4>A fake e-commerce site using the Fake Store API.</h4>
+          <a
+            href="https://adrianhhong.github.io/fake-ecommerce/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <span class="mdi mdi__projects mdi-web"></span>
+          </a>
+          <a
+            href="https://github.com/adrianhhong/fake-ecommerce"
             target="_blank"
             rel="noreferrer noopener"
           >
