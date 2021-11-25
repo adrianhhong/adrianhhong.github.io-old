@@ -106,12 +106,12 @@
           TypeScript
         </div>
         <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-vuejs"></span>
-          Vue.js
-        </div>
-        <div class="tech__box">
           <span class="mdi mdi__technologies mdi-language-html5"></span>
           HTML5
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-language-css3"></span>
+          CSS
         </div>
         <div class="tech__box">
           <span class="mdi mdi__technologies mdi-nodejs"></span>
@@ -122,8 +122,16 @@
           Express.js
         </div>
         <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-language-css3"></span>
-          CSS
+          <span class="mdi mdi__technologies mdi-react"></span>
+          React
+        </div>
+        <div class="tech__box">
+          <img src="@/assets/redux.svg" alt="ExpressJS" />
+          Redux (Saga)
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-vuejs"></span>
+          Vue.js
         </div>
         <div class="tech__box">
           <img src="@/assets/mongodb.svg" alt="MongoDB" />
@@ -132,6 +140,23 @@
         <div class="tech__box">
           <span class="mdi mdi__technologies mdi-git"></span>
           Git
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-api"></span>
+          REST APIs
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-jira"></span>
+          Jira
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-aws"></span>
+          AWS
+        </div>
+        <div class="tech__box">
+          <span class="mdi mdi__technologies mdi-coffee"></span>
+          <!-- change icon -->
+          Mocha.js
         </div>
       </h4>
     </section>
