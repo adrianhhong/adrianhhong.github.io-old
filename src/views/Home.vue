@@ -142,11 +142,23 @@
       <hr />
       <div class="work__item">
         <div class="work__title">
+          <h4>LiteCard Solutions</h4>
+          <h5>2021 – Present</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Software Developer</h4>
+          <h5><span class="mdi mdi-briefcase" /> Current</h5>
+        </div>
+      </div>
+      <hr />
+      <div class="work__item">
+        <div class="work__title">
           <h4>Telstra</h4>
           <h5>2020 – Present</h5>
         </div>
         <div class="work__detail">
           <h4>Software Developer</h4>
+          <h5><span class="mdi mdi-briefcase" /> Current</h5>
         </div>
       </div>
       <hr />
