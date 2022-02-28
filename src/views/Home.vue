@@ -4,12 +4,12 @@
       <div class="header--min-height">
         <div class="header--right">
           <div class="header__name header--font">
-            adrian<br />
-            hong
+            Adrian<br />
+            Hong
           </div>
           <div class="header__subtitle header--font">
-            software developer <br />melbourne, australia <br />
-            2021
+            Software Developer <br />Melbourne, Australia <br />
+            2022
           </div>
           <div class="header__contact">
             <a
@@ -85,13 +85,31 @@
     </header>
 
     <section id="main__section" class="container">
-      <h2 class="title--about header--font">about</h2>
+      <h2 class="title--about header--font">About</h2>
       <p>
-        Heyo! I'm <b class="header--font">Adrian Hong</b> a software developer
-        based in Melbourne, Australia. I enjoy curating memorable products that
-        are not only functional, but are aesthetically pleasing too. I currently
-        work at Telstra as a full-stack engineer, developing the API Gateway for
-        internal networks.
+        Heyo! I'm
+        <a
+          href="https://www.linkedin.com/in/adrianhhong/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><b class="header--font">Adrian Hong</b></a
+        >
+        a software developer based in Melbourne, Australia. I enjoy curating
+        memorable products that are not only functional, but are aesthetically
+        pleasing too. I currently work at
+        <a
+          href="https://www.telstra.com.au/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><b class="header--font"> Telstra</b>
+        </a>
+        as a full-stack engineer. I also work part-time at
+        <a
+          href="https://litecard.com.au/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><b class="header--font"> LiteCard</b></a
+        >.
         <br />
         <br />
         Technologies I have worked with include:
@@ -162,12 +180,21 @@
     </section>
 
     <section class="container work">
-      <h2 class="title--experience header--font">experience</h2>
-      <h3 class="work__subtitle">work</h3>
+      <h2 class="title--experience header--font">Experience</h2>
+      <h3 class="work__subtitle">Work</h3>
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>LiteCard Solutions</h4>
+          <h4>
+            <h4>
+              <a
+                href="https://litecard.com.au/"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><b class="header--font">LiteCard</b></a
+              >
+            </h4>
+          </h4>
           <h5>2021 – Present</h5>
         </div>
         <div class="work__detail">
@@ -178,7 +205,14 @@
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>Telstra</h4>
+          <h4>
+            <a
+              href="https://www.telstra.com.au/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><b class="header--font">Telstra</b></a
+            >
+          </h4>
           <h5>2020 – Present</h5>
         </div>
         <div class="work__detail">
@@ -189,7 +223,14 @@
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>Woodside Petroleum</h4>
+          <h4>
+            <a
+              href="https://www.woodside.com.au/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><b class="header--font">Woodside</b></a
+            >
+          </h4>
           <h5>2018 – 2019</h5>
         </div>
         <div class="work__detail">
@@ -200,7 +241,14 @@
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>Deloitte</h4>
+          <h4>
+            <a
+              href="https://www2.deloitte.com/au/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><b class="header--font">Deloitte</b></a
+            >
+          </h4>
           <h5>2018 – 2018</h5>
         </div>
         <div class="work__detail">
@@ -211,7 +259,14 @@
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>Telstra</h4>
+          <h4>
+            <a
+              href="https://www.telstra.com.au/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><b class="header--font">Telstra</b></a
+            >
+          </h4>
           <h5>2017 – 2018</h5>
         </div>
         <div class="work__detail">
@@ -219,11 +274,18 @@
           <h5><span class="mdi mdi-school" /> Internship</h5>
         </div>
       </div>
-      <h3 class="work__subtitle">education</h3>
+      <h3 class="work__subtitle">Education</h3>
       <hr />
       <div class="work__item">
         <div class="work__title">
-          <h4>Monash University</h4>
+          <h4>
+            <a
+              href="https://www.monash.edu/"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><b class="header--font">Monash University</b></a
+            >
+          </h4>
           <h5>2014 – 2019</h5>
         </div>
         <div class="work__detail">
@@ -234,7 +296,7 @@
     </section>
 
     <section class="container">
-      <h2 class="title--projects header--font">projects</h2>
+      <h2 class="title--projects header--font">Projects</h2>
       <div class="project project--wrap">
         <div class="project__item">
           <a
@@ -255,7 +317,7 @@
               target="_blank"
               rel="noreferrer noopener"
             >
-              Crab & Coconuts
+              <b class="header--font"> Crab & Coconuts</b>
             </a>
           </h3>
           <div class="chip"><div class="chip__label">Vue.js</div></div>
@@ -303,13 +365,17 @@
               target="_blank"
               rel="noreferrer noopener"
             >
-              Fake E-commerce Site
+              <b class="header--font"> Fake E-commerce Site</b>
             </a>
           </h3>
           <div class="chip"><div class="chip__label">React.js</div></div>
           <div class="chip"><div class="chip__label">Typescript</div></div>
           <div class="chip"><div class="chip__label">Material UI</div></div>
-          <h4>A fake e-commerce site using the Fake Store API.</h4>
+          <h4>
+            A fake e-commerce site using the Fake Store API. Features the
+            ability to filter, search, and sort all items. Also allows a user to
+            view their shopping cart, and edit their profile.
+          </h4>
           <a
             href="https://adrianhhong.github.io/fake-ecommerce/"
             target="_blank"
@@ -346,7 +412,7 @@
               target="_blank"
               rel="noreferrer noopener"
             >
-              Just One
+              <b class="header--font">Just One</b>
             </a>
           </h3>
           <div class="chip"><div class="chip__label">Javascript</div></div>
@@ -376,7 +442,7 @@
     </section>
 
     <section class="container">
-      <h2 class="title--connect header--font">connect</h2>
+      <h2 class="title--connect header--font">Connect</h2>
       <h3>Send me a Hiii<sup>1</sup> or Heyyy<sup>2</sup>!</h3>
       <h5>
         <sup>1</sup>
@@ -507,7 +573,7 @@ h5 {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -613,6 +679,7 @@ sup {
   position: absolute;
   left: 50%;
   bottom: 2vh;
+  z-index: 1;
 }
 
 .coot {
