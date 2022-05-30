@@ -8,7 +8,8 @@
             Hong
           </div>
           <div class="header__subtitle header--font">
-            Software Developer <br />Melbourne, Australia <br />
+            Software Developer <br />
+            Australia <br />
             2022
           </div>
           <div class="header__contact">
@@ -94,22 +95,15 @@
           rel="noreferrer noopener"
           ><b class="header--font">Adrian Hong</b></a
         >
-        a software developer based in Melbourne, Australia. I enjoy curating
-        memorable products that are not only functional, but are aesthetically
-        pleasing too. I currently work at
+        a software developer based in Australia. I enjoy building things that
+        make you <i>~feel good~</i>. I currently work at
         <a
-          href="https://www.telstra.com.au/"
+          href="https://www.mongodb.com/"
           target="_blank"
           rel="noreferrer noopener"
-          ><b class="header--font"> Telstra</b>
+          ><b class="header--font"> MongoDB</b>
         </a>
-        as a full-stack engineer. I also work part-time at
-        <a
-          href="https://litecard.com.au/"
-          target="_blank"
-          rel="noreferrer noopener"
-          ><b class="header--font"> LiteCard</b></a
-        >.
+        as a full-stack engineer.
         <br />
         <br />
         Technologies I have worked with include:
@@ -191,7 +185,7 @@
                 href="https://litecard.com.au/"
                 target="_blank"
                 rel="noreferrer noopener"
-                ><b class="header--font">LiteCard</b></a
+                ><b class="header--font">MongoDB</b></a
               >
             </h4>
           </h4>
@@ -206,6 +200,25 @@
       <div class="work__item">
         <div class="work__title">
           <h4>
+            <h4>
+              <a
+                href="https://litecard.com.au/"
+                target="_blank"
+                rel="noreferrer noopener"
+                ><b class="header--font">LiteCard</b></a
+              >
+            </h4>
+          </h4>
+          <h5>2021 – 2022</h5>
+        </div>
+        <div class="work__detail">
+          <h4>Software Developer</h4>
+        </div>
+      </div>
+      <hr />
+      <div class="work__item">
+        <div class="work__title">
+          <h4>
             <a
               href="https://www.telstra.com.au/"
               target="_blank"
@@ -213,11 +226,10 @@
               ><b class="header--font">Telstra</b></a
             >
           </h4>
-          <h5>2020 – Present</h5>
+          <h5>2020 – 2022</h5>
         </div>
         <div class="work__detail">
           <h4>Software Developer</h4>
-          <h5><span class="mdi mdi-briefcase" /> Current</h5>
         </div>
       </div>
       <hr />
@@ -552,23 +564,23 @@ export default {
 <style scoped>
 /* Main */
 p {
-  font-size: 33rem;
+  font-size: 33px;
 }
 
 h2 {
-  font-size: 50rem;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 35rem;
+  font-size: 35px;
 }
 
 h4 {
-  font-size: 25rem;
+  font-size: 25px;
 }
 
 h5 {
-  font-size: 20rem;
+  font-size: 20px;
 }
 
 a {
@@ -581,13 +593,13 @@ a:hover {
 }
 
 sup {
-  font-size: 20rem;
+  font-size: 20px;
 }
 
 .container {
-  width: min(90%, 1500rem);
+  width: min(90%, 1500px);
   margin-inline: auto;
-  padding: 10rem 0;
+  padding: 10px 0;
 }
 
 .header--font {
@@ -598,7 +610,6 @@ sup {
 .header {
   min-height: 100vh;
   width: calc(100vw - (100vw - 100%));
-  /* background: var(--primary-color); */
   color: var(--secondary-color);
   -webkit-animation: background-animate 15s linear infinite;
   animation: background-animate 15s linear infinite;
@@ -656,16 +667,16 @@ sup {
 }
 
 .header__name {
-  font-size: clamp(40rem, 16vw, 200rem);
+  font-size: clamp(40px, 16vw, 200px);
   font-weight: bold;
-  letter-spacing: 8rem;
+  letter-spacing: 8px;
   line-height: 100%;
   margin-bottom: 10vh;
 }
 
 .header__subtitle {
-  font-size: clamp(15rem, 2vw, 40rem);
-  letter-spacing: 2rem;
+  font-size: clamp(15px, 2vw, 40px);
+  letter-spacing: 2px;
   margin-bottom: 5vh;
 }
 
@@ -710,7 +721,7 @@ sup {
 }
 
 .mdi__technologies {
-  font-size: 36rem;
+  font-size: 36px;
 }
 
 .tech {
@@ -748,23 +759,24 @@ sup {
 }
 
 .work__subtitle {
-  margin-top: 40rem;
+  margin-top: 40px;
 }
 
 .work__item {
   display: flex;
   justify-content: space-between;
-  margin: 15rem;
+  margin: 15px;
 }
 
 .work__title {
-  width: 300rem;
+  width: 300px;
+  min-width: 100px;
   text-align: start;
 }
 
 .work__detail {
-  margin-left: 50rem;
-  width: 600rem;
+  margin-left: 50px;
+  width: 600px;
   text-align: start;
 }
 
@@ -777,15 +789,15 @@ sup {
 
 .project {
   justify-content: center;
-  border-radius: 16rem;
-  border: solid 1em var(--primary-color);
-  margin: 36rem 0;
+  border-radius: 16px;
+  border: solid 1px var(--primary-color);
+  margin: 36px 0;
   display: flex;
-  gap: 45rem;
+  gap: 45px;
 }
 
 .project--wrap {
-  padding: 30rem;
+  padding: 30px;
 }
 
 .chip {
@@ -793,18 +805,18 @@ sup {
   display: inline-flex;
   justify-content: center;
   border-radius: 9999px;
-  border: solid 2em var(--primary-color);
-  padding: 4rem 20rem;
-  margin: 0 16rem 16rem 0;
+  border: solid 2px var(--primary-color);
+  padding: 4px 20px;
+  margin: 0 16px 16px 0;
 }
 
 .chip__label {
-  font-size: 20rem;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .mdi__projects {
-  font-size: 56rem;
+  font-size: 56px;
 }
 
 .video {
@@ -819,32 +831,32 @@ sup {
 }
 
 .mdi__contact {
-  font-size: 72rem;
+  font-size: 72px;
 }
 
 @media (max-width: 800px) {
   p {
-    font-size: 20rem;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 40rem;
+    font-size: 40px;
   }
 
   h3 {
-    font-size: 25rem;
+    font-size: 25px;
   }
 
   h4 {
-    font-size: 18rem;
+    font-size: 15px;
   }
 
   h5 {
-    font-size: 15rem;
+    font-size: 13px;
   }
 
   sup {
-    font-size: 15rem;
+    font-size: 15px;
   }
 
   .chip {
@@ -852,13 +864,13 @@ sup {
     display: inline-flex;
     justify-content: center;
     border-radius: 9999px;
-    border: solid 2em var(--primary-color);
-    padding: 4rem 12rem;
-    margin: 0 12rem 12rem 0;
+    border: solid 1px var(--primary-color);
+    padding: 2px 12px;
+    margin: 0 12px 12px 0;
   }
 
   .chip__label {
-    font-size: 15rem;
+    font-size: 13px;
     font-weight: bold;
   }
 
@@ -868,11 +880,11 @@ sup {
   }
 
   .mdi__projects {
-    font-size: 36rem;
+    font-size: 36px;
   }
 
   .mdi__contact {
-    font-size: 36rem;
+    font-size: 36px;
   }
 }
 
@@ -880,7 +892,7 @@ sup {
   .project--wrap {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30rem;
+    padding: 30px;
   }
 }
 </style>
