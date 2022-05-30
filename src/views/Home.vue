@@ -188,7 +188,7 @@
               >
             </h4>
           </h4>
-          <h5>2021 – Present</h5>
+          <h5>2022 – Present</h5>
         </div>
         <div class="work__detail">
           <h4>Software Developer</h4>
