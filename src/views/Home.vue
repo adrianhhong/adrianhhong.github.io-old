@@ -9,8 +9,7 @@
           </div>
           <div class="header__subtitle header--font">
             Software Developer <br />
-            Australia <br />
-            2022
+            Australia
           </div>
           <div class="header__contact">
             <a
