@@ -44,7 +44,6 @@ export default {
 </script>
 
 <style scoped>
-/* Projects */
 .project {
   justify-content: center;
   border-radius: 16px;

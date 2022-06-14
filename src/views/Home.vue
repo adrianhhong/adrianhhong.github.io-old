@@ -175,135 +175,55 @@
     <section class="container work">
       <h2 class="title--font header--font">Experience</h2>
       <h3 class="work__subtitle">Work</h3>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <h4>
-              <a
-                href="https://www.mongodb.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><b class="header--font">MongoDB</b></a
-              >
-            </h4>
-          </h4>
-          <h5>2022 – Present</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Software Developer</h4>
-          <h5><span class="mdi mdi-briefcase" /> Current</h5>
-        </div>
-      </div>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <h4>
-              <a
-                href="https://litecard.com.au/"
-                target="_blank"
-                rel="noreferrer noopener"
-                ><b class="header--font">LiteCard</b></a
-              >
-            </h4>
-          </h4>
-          <h5>2021 – 2022</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Software Developer</h4>
-        </div>
-      </div>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <a
-              href="https://www.telstra.com.au/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><b class="header--font">Telstra</b></a
-            >
-          </h4>
-          <h5>2020 – 2022</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Software Developer</h4>
-        </div>
-      </div>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <a
-              href="https://www.woodside.com.au/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><b class="header--font">Woodside</b></a
-            >
-          </h4>
-          <h5>2018 – 2019</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Instrument Controls Engineer</h4>
-          <h5><span class="mdi mdi-school" /> Internship</h5>
-        </div>
-      </div>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <a
-              href="https://www2.deloitte.com/au/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><b class="header--font">Deloitte</b></a
-            >
-          </h4>
-          <h5>2018 – 2018</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Data Engineer</h4>
-          <h5><span class="mdi mdi-school" /> Internship</h5>
-        </div>
-      </div>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <a
-              href="https://www.telstra.com.au/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><b class="header--font">Telstra</b></a
-            >
-          </h4>
-          <h5>2017 – 2018</h5>
-        </div>
-        <div class="work__detail">
-          <h4>Network Engineer</h4>
-          <h5><span class="mdi mdi-school" /> Internship</h5>
-        </div>
-      </div>
+      <WorkItem
+        title="MongoDB"
+        timePeriod="2022 – Present"
+        link="https://www.mongodb.com/"
+        role="Software Developer"
+        label="current"
+      ></WorkItem>
+      <WorkItem
+        title="LiteCard"
+        timePeriod="2021 – 2022"
+        link="https://litecard.com.au/"
+        role="Software Developer"
+      ></WorkItem>
+      <WorkItem
+        title="Telstra"
+        timePeriod="2020 – 2022"
+        link="https://www.telstra.com.au/"
+        role="Software Developer"
+      ></WorkItem>
+      <WorkItem
+        title="Woodside"
+        timePeriod="2018 – 2019"
+        link="https://www.woodside.com.au/"
+        role="Instrumentation and Control Engineer"
+        label="internship"
+      ></WorkItem>
+      <WorkItem
+        title="Deloitte"
+        timePeriod="2018 – 2018"
+        link="https://www2.deloitte.com/au/"
+        role="Data Engineer"
+        label="internship"
+      ></WorkItem>
+      <WorkItem
+        title="Telstra"
+        timePeriod="2017 – 2018"
+        link="https://www.telstra.com.au/"
+        role="Network Engineer"
+        label="internship"
+      ></WorkItem>
       <h3 class="work__subtitle">Education</h3>
-      <hr />
-      <div class="work__item">
-        <div class="work__title">
-          <h4>
-            <a
-              href="https://www.monash.edu/"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><b class="header--font">Monash University</b></a
-            >
-          </h4>
-          <h5>2014 – 2019</h5>
-        </div>
-        <div class="work__detail">
-          <h4>BEngineering & BCommerce (Honours)</h4>
-          <h5>Electrical & Computer Systems Engineering • Accounting</h5>
-        </div>
-      </div>
+      <WorkItem
+        title="Monash University"
+        timePeriod="2014 – 2019"
+        link="https://www.monash.edu/"
+        role="BEngineering & BCommerce (Honours)"
+        label="education"
+        majors="Electrical & Computer Systems Engineering • Accounting"
+      ></WorkItem>
     </section>
 
     <section class="container">
@@ -402,10 +322,11 @@
 <script>
 import { gsap } from "gsap";
 import Project from "../components/Project.vue";
+import WorkItem from "../components/WorkItem.vue";
 
 export default {
   name: "Home",
-  components: { Project },
+  components: { Project, WorkItem },
   data: function () {
     return {
       cootClassActive: true,
@@ -621,46 +542,6 @@ sup {
 .tech__box {
   flex-grow: 1;
   width: 33%;
-}
-
-/* Experience */
-.work h3 {
-  text-align: start;
-}
-
-.work h4 {
-  margin: 0;
-}
-
-.work h5 {
-  margin: auto;
-}
-
-.work p {
-  text-align: start;
-  margin: auto;
-}
-
-.work__subtitle {
-  margin-top: 40px;
-}
-
-.work__item {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-}
-
-.work__title {
-  width: 300px;
-  min-width: 100px;
-  text-align: start;
-}
-
-.work__detail {
-  margin-left: 50px;
-  width: 600px;
-  text-align: start;
 }
 
 /* Connect */
