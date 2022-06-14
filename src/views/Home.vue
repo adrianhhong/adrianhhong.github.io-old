@@ -85,7 +85,7 @@
     </header>
 
     <section id="main__section" class="container">
-      <h2 class="title--about header--font">About</h2>
+      <h2 class="title--font header--font">About</h2>
       <p>
         Heyo! I'm
         <a
@@ -173,7 +173,7 @@
     </section>
 
     <section class="container work">
-      <h2 class="title--experience header--font">Experience</h2>
+      <h2 class="title--font header--font">Experience</h2>
       <h3 class="work__subtitle">Work</h3>
       <hr />
       <div class="work__item">
@@ -181,7 +181,7 @@
           <h4>
             <h4>
               <a
-                href="https://litecard.com.au/"
+                href="https://www.mongodb.com/"
                 target="_blank"
                 rel="noreferrer noopener"
                 ><b class="header--font">MongoDB</b></a
@@ -307,153 +307,42 @@
     </section>
 
     <section class="container">
-      <h2 class="title--projects header--font">Projects</h2>
-      <div class="project project--wrap">
-        <div class="project__item">
-          <a
-            href="https://github.com/adrianhhong/crabandcoconuts"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <video class="video" autoplay muted loop>
-              <source src="./videos/crabandcoconuts.mp4" type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-          </a>
-        </div>
-        <div class="project__item">
-          <h3>
-            <a
-              href="https://github.com/adrianhhong/crabandcoconuts"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <b class="header--font"> Crab & Coconuts</b>
-            </a>
-          </h3>
-          <div class="chip"><div class="chip__label">Vue.js</div></div>
-          <div class="chip"><div class="chip__label">Typescript</div></div>
-          <div class="chip"><div class="chip__label">HTML</div></div>
-          <div class="chip"><div class="chip__label">CSS</div></div>
-          <div class="chip"><div class="chip__label">Socket.IO</div></div>
-          <h4>
-            An online adaption of the bluffing based board game called Skull &
-            Roses, but redesigned because 🦀 crabs are cool 🦀.
-          </h4>
-          <a
-            href="http://crabandcoconuts.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-web"></span>
-          </a>
-          <a
-            href="https://github.com/adrianhhong/crabandcoconuts"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-github"></span>
-          </a>
-        </div>
-      </div>
-      <div class="project project--wrap">
-        <div class="project__item">
-          <a
-            href="https://github.com/adrianhhong/fake-ecommerce"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <video class="video" autoplay muted loop>
-              <source src="./videos/fake-ecommerce.mp4" type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-          </a>
-        </div>
-        <div class="project__item">
-          <h3>
-            <a
-              href="https://github.com/adrianhhong/fake-ecommerce"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <b class="header--font"> Fake E-commerce Site</b>
-            </a>
-          </h3>
-          <div class="chip"><div class="chip__label">React.js</div></div>
-          <div class="chip"><div class="chip__label">Typescript</div></div>
-          <div class="chip"><div class="chip__label">Material UI</div></div>
-          <h4>
-            A fake e-commerce site using the Fake Store API. Features the
+      <h2 class="title--font header--font">Projects</h2>
+      <Project
+        title="Crab & Coconuts"
+        github-link="https://github.com/adrianhhong/crabandcoconuts"
+        website-link="http://crabandcoconuts.herokuapp.com/"
+        :video-src="require(`@/assets/videos/crabandcoconuts.mp4`)"
+        :technologies="[`Vue.js`, `Typescript`, `HTML`, `CSS`, `Socket.IO`]"
+        description="An online adaption of the bluffing based board game called Skull &
+            Roses, but redesigned because 🦀 crabs are cool 🦀."
+      >
+      </Project>
+      <Project
+        title="Fake E-commerce Site"
+        github-link="https://github.com/adrianhhong/fake-ecommerce"
+        website-link="https://adrianhong.dev/fake-ecommerce/"
+        :video-src="require(`@/assets/videos/fake-ecommerce.mp4`)"
+        :technologies="[`React.js`, `Typescript`, `HTML`, `CSS`]"
+        description="A fake e-commerce site using the Fake Store API. Features the
             ability to filter, search, and sort all items. Also allows a user to
-            view their shopping cart, and edit their profile.
-          </h4>
-          <a
-            href="https://adrianhhong.github.io/fake-ecommerce/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-web"></span>
-          </a>
-          <a
-            href="https://github.com/adrianhhong/fake-ecommerce"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-github"></span>
-          </a>
-        </div>
-      </div>
-      <div class="project project--wrap">
-        <div class="project__item">
-          <a
-            href="https://github.com/adrianhhong/just-one"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <video class="video" autoplay muted loop>
-              <source src="./videos/justone.mp4" type="video/mp4" />
-              Sorry, your browser doesn't support embedded videos.
-            </video>
-          </a>
-        </div>
-        <div class="project__item">
-          <h3>
-            <a
-              href="https://github.com/adrianhhong/just-one"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <b class="header--font">Just One</b>
-            </a>
-          </h3>
-          <div class="chip"><div class="chip__label">Javascript</div></div>
-          <div class="chip"><div class="chip__label">HTML</div></div>
-          <div class="chip"><div class="chip__label">CSS</div></div>
-          <div class="chip"><div class="chip__label">Socket.IO</div></div>
-          <h4>
-            An online adaption of the board game Just One (a co-operative,
-            word-guessing party game).
-          </h4>
-          <a
-            href="https://justonegame.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-web"></span>
-          </a>
-          <a
-            href="https://github.com/adrianhhong/just-one"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <span class="mdi mdi__projects mdi-github"></span>
-          </a>
-        </div>
-      </div>
+            view their shopping cart, and edit their profile."
+      >
+      </Project>
+      <Project
+        title="Just One"
+        github-link="https://github.com/adrianhhong/just-one"
+        website-link="https://justonegame.herokuapp.com/"
+        :video-src="require(`@/assets/videos/justone.mp4`)"
+        :technologies="[`Javascript`, `HTML`, `CSS`, `Socket.IO`]"
+        description="An online adaption of the board game Just One (a co-operative,
+            word-guessing party game)."
+      >
+      </Project>
     </section>
 
     <section class="container">
-      <h2 class="title--connect header--font">Connect</h2>
+      <h2 class="title--font header--font">Connect</h2>
       <h3>Send me a Hiii<sup>1</sup> or Heyyy<sup>2</sup>!</h3>
       <h5>
         <sup>1</sup>
@@ -512,9 +401,11 @@
 
 <script>
 import { gsap } from "gsap";
+import Project from "../components/Project.vue";
 
 export default {
   name: "Home",
+  components: { Project },
   data: function () {
     return {
       cootClassActive: true,
@@ -560,7 +451,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 /* Main */
 p {
   font-size: 33px;
@@ -712,13 +603,12 @@ sup {
   }
 }
 
-/* About */
-.title--about {
-  /* color: var(--accent1-color); */
+.title--font {
   -webkit-animation: color-animate 15s linear infinite;
   animation: color-animate 15s linear infinite;
 }
 
+/* About */
 .mdi__technologies {
   font-size: 36px;
 }
@@ -734,12 +624,6 @@ sup {
 }
 
 /* Experience */
-.title--experience {
-  /* color: var(--accent2-color); */
-  -webkit-animation: color-animate 15s linear infinite;
-  animation: color-animate 15s linear infinite;
-}
-
 .work h3 {
   text-align: start;
 }
@@ -779,56 +663,7 @@ sup {
   text-align: start;
 }
 
-/* Projects */
-.title--projects {
-  /* color: var(--accent3-color); */
-  -webkit-animation: color-animate 15s linear infinite;
-  animation: color-animate 15s linear infinite;
-}
-
-.project {
-  justify-content: center;
-  border-radius: 16px;
-  border: solid 1px var(--primary-color);
-  margin: 36px 0;
-  display: flex;
-  gap: 45px;
-}
-
-.project--wrap {
-  padding: 30px;
-}
-
-.chip {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  border-radius: 9999px;
-  border: solid 2px var(--primary-color);
-  padding: 4px 20px;
-  margin: 0 16px 16px 0;
-}
-
-.chip__label {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.mdi__projects {
-  font-size: 56px;
-}
-
-.video {
-  width: clamp(1px, 75vw, 800px);
-}
-
 /* Connect */
-.title--connect {
-  /* color: var(--accent4-color); */
-  -webkit-animation: color-animate 15s linear infinite;
-  animation: color-animate 15s linear infinite;
-}
-
 .mdi__contact {
   font-size: 72px;
 }
