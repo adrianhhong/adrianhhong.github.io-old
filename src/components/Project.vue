@@ -79,4 +79,25 @@ export default {
 .video {
   width: clamp(1px, 75vw, 800px);
 }
+
+@media (max-width: 800px) {
+  .chip {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 9999px;
+    border: solid 1px var(--primary-color);
+    padding: 2px 12px;
+    margin: 0 12px 12px 0;
+  }
+
+  .chip__label {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .mdi__projects {
+    font-size: 36px;
+  }
+}
 </style>

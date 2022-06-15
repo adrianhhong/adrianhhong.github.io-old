@@ -108,67 +108,27 @@
         Technologies I have worked with include:
       </p>
       <h4 class="tech">
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-language-javascript"></span>
-          JavaScript
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-language-typescript"></span>
-          TypeScript
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-language-html5"></span>
-          HTML5
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-language-css3"></span>
-          CSS
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-nodejs"></span>
-          Node.js
-        </div>
-        <div class="tech__box">
-          <img src="@/assets/expressjs.svg" alt="ExpressJS" />
-          Express.js
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-react"></span>
-          React
-        </div>
-        <div class="tech__box">
-          <img src="@/assets/redux.svg" alt="ExpressJS" />
-          Redux (Saga)
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-vuejs"></span>
-          Vue.js
-        </div>
-        <div class="tech__box">
-          <img src="@/assets/mongodb.svg" alt="MongoDB" />
-          MongoDB
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-git"></span>
-          Git
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-api"></span>
-          REST APIs
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-jira"></span>
-          Jira
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-aws"></span>
-          AWS
-        </div>
-        <div class="tech__box">
-          <span class="mdi mdi__technologies mdi-coffee"></span>
-          <!-- change icon -->
-          Mocha.js
-        </div>
+        <Technologies
+          icon="mdi mdi-language-javascript"
+          text="Javascript"
+        ></Technologies>
+        <Technologies
+          icon="mdi mdi-language-typescript"
+          text="Typescript"
+        ></Technologies>
+        <Technologies icon="mdi mdi-language-html5" text="HTML5"></Technologies>
+        <Technologies icon="mdi mdi-language-css3" text="CSS"></Technologies>
+        <Technologies icon="mdi mdi-nodejs" text="Node.js"></Technologies>
+        <Technologies icon="icon-express" text="Express.js"></Technologies>
+        <Technologies icon="mdi mdi-react" text="React"></Technologies>
+        <Technologies icon="icon-redux" text="Redux"></Technologies>
+        <Technologies icon="mdi mdi-vuejs" text="Vue.js"></Technologies>
+        <Technologies icon="icon-mongodb" text="MongoDB"></Technologies>
+        <Technologies icon="mdi mdi-git" text="Git"></Technologies>
+        <Technologies icon="mdi mdi-jira" text="Jira"></Technologies>
+        <Technologies icon="mdi mdi-aws" text="AWS"></Technologies>
+        <Technologies icon="mdi mdi-coffee" text="Mocha"></Technologies>
+        <Technologies icon="icon-jest" text="Jest"></Technologies>
       </h4>
     </section>
 
@@ -323,10 +283,11 @@
 import { gsap } from "gsap";
 import Project from "../components/Project.vue";
 import WorkItem from "../components/WorkItem.vue";
+import Technologies from "../components/Technologies.vue";
 
 export default {
   name: "Home",
-  components: { Project, WorkItem },
+  components: { Project, WorkItem, Technologies },
   data: function () {
     return {
       cootClassActive: true,
@@ -530,18 +491,9 @@ sup {
 }
 
 /* About */
-.mdi__technologies {
-  font-size: 36px;
-}
-
 .tech {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.tech__box {
-  flex-grow: 1;
-  width: 33%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Connect */
@@ -589,9 +541,9 @@ sup {
     font-weight: bold;
   }
 
-  .tech__box {
-    flex-grow: 1;
-    width: 50%;
+  .tech {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .mdi__projects {
