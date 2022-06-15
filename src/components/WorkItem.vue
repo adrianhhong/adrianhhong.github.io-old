@@ -2,20 +2,25 @@
   <div>
     <hr />
     <div class="work__item">
-      <div class="work__title">
-        <h4>
+      <div class="work__left">
+        <span :class="`${icon} company__icon`" />
+        <div class="work__title">
           <h4>
             <a :href="link" target="_blank" rel="noreferrer noopener"
               ><b class="header--font">{{ title }}</b></a
             >
           </h4>
-        </h4>
-        <h5>{{ timePeriod }}</h5>
+          <h5>
+            <b>
+              {{ timePeriod }}
+            </b>
+          </h5>
+        </div>
       </div>
       <div class="work__detail">
         <h4>{{ role }}</h4>
         <h5 v-if="label === 'current'">
-          <span class="mdi mdi-briefcase" /> Current
+          <span class="mdi mdi-octagram" /> Current
         </h5>
         <h5 v-if="label === 'internship'">
           <span class="mdi mdi-school" /> Internship
@@ -37,6 +42,7 @@ export default {
     role: String,
     label: String,
     majors: String,
+    icon: String,
   },
 };
 </script>
@@ -69,6 +75,19 @@ export default {
   margin: 15px;
 }
 
+.work__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  min-width: 150px;
+}
+
+.company__icon {
+  font-size: 36px;
+  margin-right: 20px;
+}
+
 .work__title {
   width: 300px;
   min-width: 100px;
@@ -79,5 +98,12 @@ export default {
   margin-left: 50px;
   width: 600px;
   text-align: start;
+}
+
+@media (max-width: 800px) {
+  .company__icon {
+    font-size: 24px;
+    margin-right: 8px;
+  }
 }
 </style>

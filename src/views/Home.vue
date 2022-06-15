@@ -141,18 +141,21 @@
         link="https://www.mongodb.com/"
         role="Software Developer"
         label="current"
+        icon="icon-mongodb"
       ></WorkItem>
       <WorkItem
         title="LiteCard"
         timePeriod="2021 – 2022"
         link="https://litecard.com.au/"
         role="Software Developer"
+        icon="icon-litecard"
       ></WorkItem>
       <WorkItem
         title="Telstra"
         timePeriod="2020 – 2022"
         link="https://www.telstra.com.au/"
         role="Software Developer"
+        icon="icon-telstra"
       ></WorkItem>
       <WorkItem
         title="Woodside"
@@ -160,6 +163,7 @@
         link="https://www.woodside.com.au/"
         role="Instrumentation and Control Engineer"
         label="internship"
+        icon="icon-woodside"
       ></WorkItem>
       <WorkItem
         title="Deloitte"
@@ -167,6 +171,7 @@
         link="https://www2.deloitte.com/au/"
         role="Data Engineer"
         label="internship"
+        icon="icon-deloitte"
       ></WorkItem>
       <WorkItem
         title="Telstra"
@@ -174,6 +179,7 @@
         link="https://www.telstra.com.au/"
         role="Network Engineer"
         label="internship"
+        icon="icon-telstra"
       ></WorkItem>
       <h3 class="work__subtitle">Education</h3>
       <WorkItem
@@ -182,6 +188,7 @@
         link="https://www.monash.edu/"
         role="BEngineering & BCommerce (Honours)"
         label="education"
+        icon="icon-monash"
         majors="Electrical & Computer Systems Engineering • Accounting"
       ></WorkItem>
     </section>
