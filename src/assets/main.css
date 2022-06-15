@@ -39,6 +39,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-telstra:before {
+  content: "\e908";
+}
 .icon-woodside:before {
   content: "\e902";
 }
@@ -47,9 +50,6 @@
 }
 .icon-monash:before {
   content: "\e904";
-}
-.icon-telstra:before {
-  content: "\e908";
 }
 .icon-litecard:before {
   content: "\e909";
