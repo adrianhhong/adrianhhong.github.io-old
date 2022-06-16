@@ -19,12 +19,14 @@
       </div>
       <div class="work__detail">
         <h4>{{ role }}</h4>
-        <h5 v-if="label === 'current'">
-          <span class="mdi mdi-octagram" /> Current
-        </h5>
-        <h5 v-if="label === 'internship'">
-          <span class="mdi mdi-school" /> Internship
-        </h5>
+        <h6 v-if="label === 'current'">
+          <span class="mdi mdi-octagram grey--font" />
+          <span class="header--font grey--font">CURRENT</span>
+        </h6>
+        <h6 v-if="label === 'internship'">
+          <span class="mdi mdi-school grey--font" />
+          <span class="header--font grey--font">INTERNSHIP</span>
+        </h6>
         <h5 v-if="label === 'education'">
           {{ majors }}
         </h5>
@@ -60,6 +62,11 @@ export default {
   margin: auto;
 }
 
+.work h6 {
+  margin: auto;
+  font-size: 16px;
+}
+
 .work p {
   text-align: start;
   margin: auto;
@@ -67,6 +74,11 @@ export default {
 
 .work__subtitle {
   margin-top: 40px;
+}
+
+.grey--font {
+  color: #818181;
+  margin-right: 12px;
 }
 
 .work__item {
