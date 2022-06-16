@@ -1,21 +1,19 @@
 <template>
   <div class="project project--wrap">
-    <div class="project__item">
-      <a :href="githubLink" target="_blank" rel="noreferrer noopener">
-        <video class="video" autoplay muted loop>
-          <source :src="videoSrc" type="video/mp4" />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      </a>
-    </div>
-    <div class="project__item">
+    <a :href="githubLink" target="_blank" rel="noreferrer noopener">
+      <video class="video" autoplay muted loop>
+        <source :src="videoSrc" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+    </a>
+    <div>
       <h3>
         <a :href="githubLink" target="_blank" rel="noreferrer noopener">
           <b class="header--font">{{ title }}</b>
         </a>
       </h3>
       <div v-for="chip in technologies" :key="chip" class="chip">
-        <div class="chip__label">{{ chip }}</div>
+        <div class="chip__label header--font">{{ chip }}</div>
       </div>
       <h4>
         {{ description }}
@@ -63,6 +61,7 @@ export default {
   justify-content: center;
   border-radius: 9999px;
   border: solid 2px var(--primary-color);
+  background: var(--primary-color);
   padding: 4px 20px;
   margin: 0 16px 16px 0;
 }
@@ -70,6 +69,7 @@ export default {
 .chip__label {
   font-size: 20px;
   font-weight: bold;
+  color: var(--secondary-color);
 }
 
 .mdi__projects {

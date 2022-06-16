@@ -202,7 +202,7 @@
         :video-src="require(`@/assets/videos/crabandcoconuts.mp4`)"
         :technologies="[`Vue.js`, `Typescript`, `HTML`, `CSS`, `Socket.IO`]"
         description="An online adaption of the bluffing based board game called Skull &
-            Roses, but redesigned because 🦀 crabs are cool 🦀."
+            Roses, but redesigned because 🦀 crabs are cool 🦀. Jump into a room and play with mates! Uses WebSockets to maintain a live connection for the game rooms."
       >
       </Project>
       <Project
@@ -223,7 +223,7 @@
         :video-src="require(`@/assets/videos/justone.mp4`)"
         :technologies="[`Javascript`, `HTML`, `CSS`, `Socket.IO`]"
         description="An online adaption of the board game Just One (a co-operative,
-            word-guessing party game)."
+            word-guessing party game). Jump into a room and play with mates!"
       >
       </Project>
     </section>
