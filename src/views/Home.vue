@@ -2,14 +2,14 @@
   <div>
     <header class="header">
       <div class="header--min-height">
-        <div class="header--right">
-          <div class="header__name header--font">
-            Adrian<br />
-            Hong
-          </div>
+        <div class="header--center">
+          <div class="header__name name--font">Adrian Hong</div>
           <div class="header__subtitle header--font">
-            Software Developer <br />
-            Australia
+            SOFTWARE DEVELOPER <br />
+            AUSTRALIA <br />
+            2022
+            <br />
+            <span id="contact1" class="mdi mdi-face-man"></span>
           </div>
           <div class="header__contact">
             <a
@@ -385,6 +385,10 @@ sup {
   font-family: var(--header);
 }
 
+.name--font {
+  font-family: var(--name);
+}
+
 /* Header */
 .header {
   min-height: 100vh;
@@ -440,17 +444,18 @@ sup {
   min-height: 100%;
 }
 
-.header--right {
-  text-align: right;
+.header--center {
+  text-align: center;
   padding: 3vw;
 }
 
 .header__name {
-  font-size: clamp(40px, 16vw, 200px);
+  font-size: clamp(40px, 20vw, 200px);
   font-weight: bold;
-  letter-spacing: 8px;
+  letter-spacing: -0.2vw;
   line-height: 100%;
   margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .header__subtitle {
@@ -461,13 +466,13 @@ sup {
 
 .header__coot {
   position: absolute;
-  bottom: 3vw;
-  left: 3vw;
+  bottom: 50px;
+  left: 50px;
 }
 
 #header__scroll {
   position: absolute;
-  left: 50%;
+  right: 5%;
   bottom: 2vh;
   z-index: 1;
 }
@@ -501,6 +506,7 @@ sup {
 .tech {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  font-weight: 400;
 }
 
 /* Connect */

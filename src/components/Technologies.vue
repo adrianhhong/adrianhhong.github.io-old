@@ -1,5 +1,5 @@
 <template>
-  <div class="mdi__box">
+  <div class="mdi__box header--font">
     <span :class="`mdi__technologies ${icon}`"></span>
     {{ text }}
   </div>
