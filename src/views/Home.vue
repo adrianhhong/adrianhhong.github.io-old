@@ -3,10 +3,18 @@
     <header class="header">
       <div class="header--min-height">
         <div class="header--center">
-          <div class="header__name name--font">Adrian Hong</div>
+          <div class="header__name name--font">
+            <div style="padding-left: 10vw">FULL STACK</div>
+            <div style="padding-left: 20vw">SOFTWARE ENGINEER</div>
+            <div style="padding-left: 30vw">SYDNEY, AUSTRALIA</div>
+            <!-- <div style="padding-left: 10vw">WELCOME TO</div>
+            <div style="padding-left: 20vw">THE WONDERFUL</div>
+            <div style="padding-left: 30vw">WORLD OF</div> -->
+          </div>
+          <div class="header__adrian name--font">Adrian Hong</div>
           <div class="header__coot">
             <svg
-              width="5%"
+              width="7%"
               length="auto"
               viewBox="0 0 100 100"
               fill="none"
@@ -38,13 +46,11 @@
               <circle cx="74.7462" cy="35" r="3" fill="white" />
             </svg>
           </div>
-          <div class="header__subtitle header--font">
+          <!-- <div class="header__subtitle header--font">
             SOFTWARE DEVELOPER <br />
-            AUSTRALIA <br />
-            2022
+            based in AUSTRALIA
             <br />
-            <span id="contact1" class="mdi mdi-face-man"></span>
-          </div>
+          </div> -->
           <div class="header__contact">
             <a
               href="mailto: adrianhhong@gmail.com"
@@ -89,8 +95,7 @@
           target="_blank"
           rel="noreferrer noopener"
           ><b class="header--font">Adrian Hong</b></a
-        >
-        a software developer based in Australia. I enjoy building things that
+        >, a software developer based in Australia. I enjoy building things that
         make you <i>~feel good~</i>. I currently work at
         <a
           href="https://www.mongodb.com/"
@@ -378,6 +383,7 @@ sup {
 
 .name--font {
   font-family: var(--name);
+  font-weight: 400;
 }
 
 /* Header */
@@ -390,7 +396,9 @@ sup {
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  background: radial-gradient(#e66465, #9198e5, #282525);
+  /* background: radial-gradient(#ffefba, #544a7d, #03010c); */
+  background: radial-gradient(#efb0f9, #104227, #03010c);
+
   /* background: radial-gradient(
     var(--accent2-color),
     var(--accent3-color),
@@ -399,19 +407,6 @@ sup {
   ); */
 
   background-size: 300% 300%;
-}
-
-.header:after {
-  background-image: url("/noise.gif");
-  content: "";
-  position: fixed;
-  height: 500%;
-  width: calc(100vw - (100vw - 100%));
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  opacity: 0.02;
 }
 
 @keyframes gradient {
@@ -484,12 +479,20 @@ sup {
 }
 
 .header__name {
-  font-size: clamp(40px, 20vw, 150px);
-  font-weight: bold;
+  font-size: clamp(20px, 5vw, 90px);
   letter-spacing: -0.2vw;
   line-height: 100%;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  margin-top: 5vh;
+  text-align: start;
+}
+
+.header__adrian {
+  margin-top: 9vh;
+  font-size: clamp(40px, 14vw, 130px);
+  font-weight: 900;
+  margin-bottom: 5vh;
+  line-height: 100%;
+  letter-spacing: -0.2vw;
 }
 
 .header__subtitle {
@@ -505,8 +508,7 @@ sup {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); */
-  text-align: center;
-  align-content: center;
+  margin-bottom: 5vh;
 }
 
 #header__scroll {
@@ -517,8 +519,8 @@ sup {
 }
 
 .coot {
-  animation-name: spin;
-  animation-duration: 5000ms;
+  animation-name: bounce;
+  animation-duration: 1000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -534,15 +536,6 @@ sup {
   }
   100% {
     transform: translateY(0px);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
   }
 }
 
