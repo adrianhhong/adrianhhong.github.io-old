@@ -4,6 +4,40 @@
       <div class="header--min-height">
         <div class="header--center">
           <div class="header__name name--font">Adrian Hong</div>
+          <div class="header__coot">
+            <svg
+              width="5%"
+              length="auto"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="coot"
+            >
+              <path
+                d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
+                fill="#191a1a"
+                stroke="#191a1a"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
+                fill="#fff"
+              />
+              <circle
+                cx="64.7462"
+                cy="31"
+                r="19.5"
+                fill="#191a1a"
+                stroke="#191a1a"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="74.7462" cy="35" r="3" fill="white" />
+            </svg>
+          </div>
           <div class="header__subtitle header--font">
             SOFTWARE DEVELOPER <br />
             AUSTRALIA <br />
@@ -42,44 +76,6 @@
             style="cursor: pointer"
           >
           </a>
-        </div>
-        <div class="header__coot">
-          <div>
-            <svg
-              width="50%"
-              length="auto"
-              viewBox="0 0 100 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              @click="cootClassActive = !cootClassActive"
-              :class="{ coot: cootClassActive }"
-              style="cursor: pointer"
-            >
-              <path
-                d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
-                fill="#191a1a"
-                stroke="#191a1a"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M83.8129 34.3283C86.7963 36.2956 91.587 36.2812 93.8599 38.2621C93.2724 44.1653 84.2345 44.3813 79.7462 43.5278L83.8129 34.3283Z"
-                fill="#fff"
-              />
-              <circle
-                cx="64.7462"
-                cy="31"
-                r="19.5"
-                fill="#191a1a"
-                stroke="#191a1a"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="74.7462" cy="35" r="3" fill="white" />
-            </svg>
-          </div>
         </div>
       </div>
     </header>
@@ -295,11 +291,6 @@ import Technologies from "../components/Technologies.vue";
 export default {
   name: "Home",
   components: { Project, WorkItem, Technologies },
-  data: function () {
-    return {
-      cootClassActive: true,
-    };
-  },
   mounted: function () {
     var tl = gsap.timeline();
     tl.from(".header__name", { y: 100, opacity: 0, duration: 0.5 });
@@ -394,8 +385,51 @@ sup {
   min-height: 100vh;
   width: calc(100vw - (100vw - 100%));
   color: var(--secondary-color);
-  -webkit-animation: background-animate 15s linear infinite;
-  animation: background-animate 15s linear infinite;
+  /* -webkit-animation: background-animate 15s linear infinite;
+  animation: background-animate 15s linear infinite; */
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: radial-gradient(#e66465, #9198e5, #282525);
+  /* background: radial-gradient(
+    var(--accent2-color),
+    var(--accent3-color),
+    var(--accent4-color),
+    var(--accent5-color)
+  ); */
+
+  background-size: 300% 300%;
+}
+
+.header:after {
+  background-image: url("/noise.gif");
+  content: "";
+  position: fixed;
+  height: 500%;
+  width: calc(100vw - (100vw - 100%));
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  opacity: 0.02;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 70% 30%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 20% 70%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes background-animate {
@@ -450,7 +484,7 @@ sup {
 }
 
 .header__name {
-  font-size: clamp(40px, 20vw, 200px);
+  font-size: clamp(40px, 20vw, 150px);
   font-weight: bold;
   letter-spacing: -0.2vw;
   line-height: 100%;
@@ -465,9 +499,14 @@ sup {
 }
 
 .header__coot {
-  position: absolute;
-  bottom: 50px;
-  left: 50px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: center;
+  align-content: center;
 }
 
 #header__scroll {
@@ -478,9 +517,10 @@ sup {
 }
 
 .coot {
-  animation-name: bounce;
-  animation-duration: 600ms;
+  animation-name: spin;
+  animation-duration: 5000ms;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes bounce {
@@ -494,6 +534,15 @@ sup {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
 
