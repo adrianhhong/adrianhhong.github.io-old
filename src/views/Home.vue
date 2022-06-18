@@ -7,9 +7,6 @@
             <div style="padding-left: 10vw">FULL STACK</div>
             <div style="padding-left: 20vw">SOFTWARE ENGINEER</div>
             <div style="padding-left: 30vw">SYDNEY, AUSTRALIA</div>
-            <!-- <div style="padding-left: 10vw">WELCOME TO</div>
-            <div style="padding-left: 20vw">THE WONDERFUL</div>
-            <div style="padding-left: 30vw">WORLD OF</div> -->
           </div>
           <div class="header__adrian name--font">Adrian Hong</div>
           <div class="header__coot">
@@ -46,11 +43,6 @@
               <circle cx="74.7462" cy="35" r="3" fill="white" />
             </svg>
           </div>
-          <!-- <div class="header__subtitle header--font">
-            SOFTWARE DEVELOPER <br />
-            based in AUSTRALIA
-            <br />
-          </div> -->
           <div class="header__contact">
             <a
               href="mailto: adrianhhong@gmail.com"
@@ -391,22 +383,14 @@ sup {
   min-height: 100vh;
   width: calc(100vw - (100vw - 100%));
   color: var(--secondary-color);
-  /* -webkit-animation: background-animate 15s linear infinite;
-  animation: background-animate 15s linear infinite; */
   -webkit-animation: gradient 15s ease infinite;
   animation: gradient 15s ease infinite;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  /* background: radial-gradient(#ffefba, #544a7d, #03010c); */
-  background: radial-gradient(#efb0f9, #104227, #03010c);
-
-  /* background: radial-gradient(
+  background: radial-gradient(
+    var(--accent1-color),
     var(--accent2-color),
-    var(--accent3-color),
-    var(--accent4-color),
-    var(--accent5-color)
-  ); */
-
-  background-size: 300% 300%;
+    var(--accent3-color)
+  );
+  background-size: 200% 200%;
 }
 
 @keyframes gradient {
@@ -427,42 +411,12 @@ sup {
   }
 }
 
-@keyframes background-animate {
-  0% {
-    background-color: var(--accent1-color);
-  }
-  20% {
-    background-color: var(--accent2-color);
-  }
-  40% {
-    background-color: var(--accent3-color);
-  }
-  60% {
-    background-color: var(--accent4-color);
-  }
-  80% {
-    background-color: var(--accent5-color);
-  }
-  100% {
-    background-color: var(--accent1-color);
-  }
-}
-
 @keyframes color-animate {
   0% {
     color: var(--accent1-color);
   }
-  20% {
-    color: var(--accent2-color);
-  }
-  40% {
-    color: var(--accent3-color);
-  }
-  60% {
-    color: var(--accent4-color);
-  }
-  80% {
-    color: var(--accent5-color);
+  50% {
+    color: #a191e2;
   }
   100% {
     color: var(--accent1-color);
@@ -489,7 +443,7 @@ sup {
 .header__adrian {
   margin-top: 9vh;
   font-size: clamp(40px, 14vw, 130px);
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 5vh;
   line-height: 100%;
   letter-spacing: -0.2vw;
@@ -502,12 +456,6 @@ sup {
 }
 
 .header__coot {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); */
   margin-bottom: 5vh;
 }
 
@@ -540,8 +488,8 @@ sup {
 }
 
 .title--font {
-  -webkit-animation: color-animate 15s linear infinite;
-  animation: color-animate 15s linear infinite;
+  -webkit-animation: color-animate 5s ease infinite;
+  animation: color-animate 5s ease infinite;
 }
 
 /* About */
