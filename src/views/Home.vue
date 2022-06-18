@@ -4,14 +4,22 @@
       <div class="header--min-height">
         <div class="header--center">
           <div class="header__name name--font">
-            <div style="padding-left: 10vw">FULL STACK</div>
-            <div style="padding-left: 20vw">SOFTWARE ENGINEER</div>
-            <div style="padding-left: 30vw">SYDNEY, AUSTRALIA</div>
+            <div style="padding-left: 5vw; padding-right: 5vw">
+              FULL STACK
+              <span class="header__name--small">(front and back)</span>
+            </div>
+            <div style="padding-left: 7vw; padding-right: 7vw">
+              SOFTWARE DEVELOPER
+            </div>
+            <div style="padding-left: 5vw; padding-right: 5vw">
+              <span class="header__name--small">(based in)</span>
+              SYDNEY, AUSTRALIA
+            </div>
           </div>
           <div class="header__adrian name--font">Adrian Hong</div>
           <div class="header__coot">
             <svg
-              width="7%"
+              :width="vw > vh ? `15vw` : `15vh`"
               length="auto"
               viewBox="0 0 100 100"
               fill="none"
@@ -20,8 +28,8 @@
             >
               <path
                 d="M9.24624 42C-2.25379 61.5 18.7462 88.7229 41.7462 90C64.7462 91.2771 80.7462 73.5 71.2462 49L53.7462 46C52.2462 52.6667 39.5 55.5 9.24624 42Z"
-                fill="#191a1a"
-                stroke="#191a1a"
+                fill="#0d0e0e"
+                stroke="#0d0e0e"
                 stroke-width="3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -34,37 +42,14 @@
                 cx="64.7462"
                 cy="31"
                 r="19.5"
-                fill="#191a1a"
-                stroke="#191a1a"
+                fill="#0d0e0e"
+                stroke="#0d0e0e"
                 stroke-width="3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
               <circle cx="74.7462" cy="35" r="3" fill="white" />
             </svg>
-          </div>
-          <div class="header__contact">
-            <a
-              href="mailto: adrianhhong@gmail.com"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span id="contact1" class="mdi mdi__contact mdi-email"></span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adrianhhong/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span id="contact2" class="mdi mdi__contact mdi-linkedin"></span>
-            </a>
-            <a
-              href="https://github.com/adrianhhong"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <span id="contact3" class="mdi mdi__contact mdi-github"></span>
-            </a>
           </div>
         </div>
         <div id="header__scroll">
@@ -291,26 +276,11 @@ export default {
   mounted: function () {
     var tl = gsap.timeline();
     tl.from(".header__name", { y: 100, opacity: 0, duration: 0.5 });
-    tl.from(".header__subtitle", {
+    tl.from(".header__adrian", {
       y: 100,
       opacity: 0,
-      duration: 0.3,
+      duration: 0.5,
       delay: 0.1,
-    });
-    tl.from("#contact1", {
-      y: 100,
-      opacity: 0,
-      duration: 0.1,
-    });
-    tl.from("#contact2", {
-      y: 100,
-      opacity: 0,
-      duration: 0.1,
-    });
-    tl.from("#contact3", {
-      y: 100,
-      opacity: 0,
-      duration: 0.1,
     });
     tl.from("#header__scroll", {
       y: -100,
@@ -383,12 +353,13 @@ sup {
   min-height: 100vh;
   width: calc(100vw - (100vw - 100%));
   color: var(--secondary-color);
-  -webkit-animation: gradient 15s ease infinite;
-  animation: gradient 15s ease infinite;
+  -webkit-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
   background: radial-gradient(
     var(--accent1-color),
     var(--accent2-color),
-    var(--accent3-color)
+    var(--accent3-color),
+    var(--accent4-color)
   );
   background-size: 200% 200%;
 }
@@ -416,7 +387,7 @@ sup {
     color: var(--accent1-color);
   }
   50% {
-    color: #a191e2;
+    color: var(--accent2-color);
   }
   100% {
     color: var(--accent1-color);
@@ -433,18 +404,21 @@ sup {
 }
 
 .header__name {
-  font-size: clamp(20px, 5vw, 90px);
+  font-size: clamp(20px, 4vw, 90px);
   letter-spacing: -0.2vw;
   line-height: 100%;
   margin-top: 5vh;
-  text-align: start;
+}
+
+.header__name--small {
+  font-size: clamp(10px, 2vw, 70px);
 }
 
 .header__adrian {
   margin-top: 9vh;
   font-size: clamp(40px, 14vw, 130px);
   font-weight: 700;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
   line-height: 100%;
   letter-spacing: -0.2vw;
 }
