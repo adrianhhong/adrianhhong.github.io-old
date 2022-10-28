@@ -5,8 +5,8 @@
         <div class="header--center">
           <div class="header__name name--font">
             <div style="padding-left: 5vw; padding-right: 5vw">
-              FULL STACK
-              <span class="header__name--small">(front and back)</span>
+              FRONT END
+              <span class="header__name--small">(JS, HTML, CSS)</span>
             </div>
             <div style="padding-left: 7vw; padding-right: 7vw">
               SOFTWARE DEVELOPER
@@ -208,25 +208,7 @@
 
     <section class="container">
       <h2 class="title--font header--font">Connect</h2>
-      <h3>Send me a Hiii<sup>1</sup> or Heyyy<sup>2</sup>!</h3>
-      <h5>
-        <sup>1</sup>
-        <a
-          href="https://youtu.be/X74OxXravDo"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          With a bunch of I's </a
-        ><br />
-        <sup>2</sup>
-        <a
-          href="https://youtu.be/X74OxXravDo"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          With a bunch of Y's
-        </a>
-      </h5>
+      <h3>Reach out, and say hello!</h3>
       <div style="display: flex; justify-content: space-between">
         <div>
           <a
@@ -253,7 +235,7 @@
         </div>
         <div>
           <a
-            onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
             class="mdi mdi__contact mdi-arrow-up"
             style="cursor: pointer"
           >
