@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header--min-height">
       <div class="header--center">
-        <div class="header__name name--font">
+        <div class="header__name description--font">
           <div style="padding-left: 5vw; padding-right: 5vw">
             FRONT END
             <span class="header__name--small">(JS, HTML, CSS)</span>
@@ -127,18 +127,6 @@ export default {
   }
 }
 
-@keyframes color-animate {
-  0% {
-    color: var(--accent1-color);
-  }
-  50% {
-    color: var(--accent2-color);
-  }
-  100% {
-    color: var(--accent1-color);
-  }
-}
-
 .header--min-height {
   min-height: 100%;
 }
@@ -165,7 +153,7 @@ export default {
   font-weight: 700;
   margin-bottom: 10vh;
   line-height: 100%;
-  letter-spacing: -0.2vw;
+  letter-spacing: 0.5vw;
 }
 
 .header__subtitle {

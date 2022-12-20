@@ -1,7 +1,8 @@
 :root {
   font-size: 6.25%;
   --header: "Poppins", sans-serif;
-  --name: "Inknut Antiqua", serif;
+  --description: 'Unbounded', 'cursive';
+  --name: 'Libre Baskerville', serif;
 
   --text-color: #eee;
   --primary-color: #eee;

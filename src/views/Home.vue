@@ -68,7 +68,24 @@ sup {
 
 .name--font {
   font-family: var(--name);
-  font-weight: 400;
+  font-weight: 700;
+}
+
+.description--font {
+  font-family: var(--description);
+  font-weight: 700;
+}
+
+@keyframes color-animate {
+  0% {
+    color: var(--accent1-color);
+  }
+  50% {
+    color: var(--accent2-color);
+  }
+  100% {
+    color: var(--accent1-color);
+  }
 }
 
 .title--font {
