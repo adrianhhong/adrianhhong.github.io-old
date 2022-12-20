@@ -9,21 +9,21 @@
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi__contact mdi-email"></span>
+          <span class="mdi mdi__contact mdi-email" />
         </a>
         <a
           href="https://www.linkedin.com/in/adrianhhong/"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi__contact mdi-linkedin"></span>
+          <span class="mdi mdi__contact mdi-linkedin" />
         </a>
         <a
           href="https://github.com/adrianhhong"
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span class="mdi mdi__contact mdi-github"></span>
+          <span class="mdi mdi__contact mdi-github" />
         </a>
       </div>
       <div>
@@ -43,7 +43,6 @@ export default {};
 </script>
 
 <style scoped>
-/* Connect */
 .mdi__contact {
   font-size: 72px;
 }

@@ -9,21 +9,21 @@
       role="Software Developer"
       label="current"
       icon="icon-mongodb"
-    ></WorkItem>
+    />
     <WorkItem
       title="LiteCard"
       timePeriod="2021 – 2022"
       link="https://litecard.com.au/"
       role="Software Developer"
       icon="icon-litecard"
-    ></WorkItem>
+    />
     <WorkItem
       title="Telstra"
       timePeriod="2020 – 2022"
       link="https://www.telstra.com.au/"
       role="Software Developer"
       icon="icon-telstra"
-    ></WorkItem>
+    />
     <WorkItem
       title="Woodside"
       timePeriod="2018 – 2019"
@@ -31,7 +31,7 @@
       role="Instrumentation and Control Engineer"
       label="internship"
       icon="icon-woodside"
-    ></WorkItem>
+    />
     <WorkItem
       title="Deloitte"
       timePeriod="2018 – 2018"
@@ -39,7 +39,7 @@
       role="Data Engineer"
       label="internship"
       icon="icon-deloitte"
-    ></WorkItem>
+    />
     <WorkItem
       title="Telstra"
       timePeriod="2017 – 2018"
@@ -47,7 +47,7 @@
       role="Network Engineer"
       label="internship"
       icon="icon-telstra"
-    ></WorkItem>
+    />
     <h3 class="work__subtitle">Education</h3>
     <WorkItem
       title="Monash University"
@@ -57,7 +57,7 @@
       label="education"
       icon="icon-monash"
       majors="Electrical & Computer Systems Engineering • Accounting"
-    ></WorkItem>
+    />
   </section>
 </template>
 

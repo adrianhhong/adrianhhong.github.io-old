@@ -9,8 +9,7 @@
       :technologies="[`Vue.js`, `Typescript`, `HTML`, `CSS`, `Socket.IO`]"
       description="An online adaption of the bluffing based board game called Skull &
             Roses, but redesigned because 🦀 crabs are cool 🦀. Jump into a room and play with mates! Uses WebSockets to maintain a live connection for the game rooms."
-    >
-    </Project>
+    />
     <Project
       title="Fake E-commerce Site"
       github-link="https://github.com/adrianhhong/fake-ecommerce"
@@ -20,8 +19,7 @@
       description="A fake e-commerce site using the Fake Store API. Features the
             ability to filter, search, and sort all items. Also allows a user to
             view their shopping cart, and edit their profile."
-    >
-    </Project>
+    />
     <Project
       title="Just One"
       github-link="https://github.com/adrianhhong/just-one"
@@ -30,8 +28,7 @@
       :technologies="[`Javascript`, `HTML`, `CSS`, `Socket.IO`]"
       description="An online adaption of the board game Just One (a co-operative,
             word-guessing party game). Jump into a room and play with mates!"
-    >
-    </Project>
+    />
   </section>
 </template>
 
