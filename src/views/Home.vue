@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Title />
     <About />
     <Experience />
     <Projects />
@@ -11,13 +11,13 @@
 <script>
 import About from "./home/About.vue";
 import Experience from "./home/Experience.vue";
-import Header from "./home/Header.vue";
+import Title from "./home/Title.vue";
 import Projects from "./home/Projects.vue";
 import Connect from "./home/Connect.vue";
 
 export default {
   name: "Home",
-  components: { About, Experience, Header, Projects, Connect },
+  components: { About, Experience, Title, Projects, Connect },
 };
 </script>
 

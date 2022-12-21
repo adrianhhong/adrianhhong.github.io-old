@@ -20,12 +20,16 @@
       <div class="work__detail">
         <h4>{{ role }}</h4>
         <h6 v-if="label === 'current'">
-          <span class="mdi mdi-octagram grey--font" />
-          <span class="header--font grey--font">CURRENT</span>
+          <div class="chip">
+            <span class="mdi mdi-octagram chip--icon" />
+            <div class="chip__label header--font">CURRENT</div>
+          </div>
         </h6>
         <h6 v-if="label === 'internship'">
-          <span class="mdi mdi-school grey--font" />
-          <span class="header--font grey--font">INTERNSHIP</span>
+          <div class="chip">
+            <span class="mdi mdi-school chip--icon" />
+            <div class="chip__label header--font">INTERNSHIP</div>
+          </div>
         </h6>
         <h5 v-if="label === 'education'">
           {{ majors }}
@@ -50,6 +54,27 @@ export default {
 </script>
 
 <style scoped>
+.chip {
+  align-items: center;
+  display: inline-flex;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  padding: 4px 20px;
+}
+
+.chip__label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.chip--icon {
+  color: var(--secondary-color);
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
 .work h3 {
   text-align: start;
 }
@@ -74,11 +99,6 @@ export default {
 
 .work__subtitle {
   margin-top: 40px;
-}
-
-.grey--font {
-  color: #818181;
-  margin-right: 12px;
 }
 
 .work__item {
