@@ -75,6 +75,30 @@ export default {
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  .chip {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 2px 8px;
+  }
+
+  .chip__label {
+    font-size: 8px;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .chip--icon {
+    color: var(--secondary-color);
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+  }
+}
+
 .work h3 {
   text-align: start;
 }
